@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Amitech</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="splash.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="js/supersized.3.2.4.min.js"></script>
+		<script type="text/javascript" src="js/supersized.shutter.min.js"></script>
+		<script src="js/jquery.bxSlider.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+				jQuery(function($){
+					$.supersized({
+						// Functionality
+						slideshow               :   0,			// Slideshow on/off
+						autoplay				:	0,			// Slideshow starts playing automatically
+						start_slide             :   1,			// Start slide (0 is random)
+						stop_loop				:	0,			// Pauses slideshow on last slide
+						random					: 	0,			// Randomize slide order (Ignores start slide)
+						slide_interval          :   3000,		// Length between transitions
+						transition              :   0, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+						transition_speed		:	1000,		// Speed of transition
+						new_window				:	0,			// Image links open in new window/tab
+						pause_hover             :   0,			// Pause slideshow on hover
+						keyboard_nav            :   0,			// Keyboard navigation on/off
+						performance				:	3,			// 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
+						image_protect			:	1,			// Disables image dragging and right click with Javascript
+
+						// Size & Position						   
+						min_width		        :   0,			// Min width allowed (in pixels)
+						min_height		        :   220,		// Min height allowed (in pixels)
+						vertical_center         :   0,			// Vertically center background
+						horizontal_center       :   0,			// Horizontally center background
+						fit_always				:	0,			// Image will never exceed browser width or height (Ignores min. dimensions)
+						fit_portrait         	:   0,			// Portrait images will not exceed browser height
+						fit_landscape			:   0,			// Landscape images will not exceed browser width
+
+						// Components							
+						slide_links				:	false,	// Individual links for each slide (Options: false, 'number', 'name', 'blank')
+						thumb_links				:	0,			// Individual thumb links for each slide
+						thumbnail_navigation    :   0,			// Thumbnail navigation
+						slides 					:  	[			// Slideshow Images
+															{image : 'img/about_bkg.jpg', title : '', thumb : '', url : ''}
+													],
+
+						// Theme Options			   
+						progress_bar			:	0,			// Timer for each slide							
+						mouse_scrub				:	0
+					});
+			    });
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var subnav = $('#jb_subnav').bxSlider({
+				    captions: false,
+				    auto: false,
+				    controls: false
+				  });
+				
+			var animateTop = true;
+			
+			$('.open-close-toggle').click(function(){
+				$('#jb_toggle-section').slideDown();
+				if(animateTop == true){
+					$('#supersized').animate({
+					    top: '+=175px'
+					  }, 400);
+					animateTop = false;
+				}
+				var buttonText = $(this).html();
+			    if(buttonText == "FIRM"){
+					document.getElementById("firm").setAttribute("class", "open-close-toggle active");
+					document.getElementById("services").setAttribute("class", "open-close-toggle");
+					document.getElementById("industries").setAttribute("class", "open-close-toggle");
+					document.getElementById("clients").setAttribute("class", "open-close-toggle");
+					document.getElementById("careers").setAttribute("class", "open-close-toggle");
+					document.getElementById("resources").setAttribute("class", "open-close-toggle");
+			        subnav.goToSlide(0);
+				}else if(buttonText == "SERVICES"){
+					document.getElementById("firm").setAttribute("class", "open-close-toggle");
+					document.getElementById("services").setAttribute("class", "open-close-toggle active");
+					document.getElementById("industries").setAttribute("class", "open-close-toggle");
+					document.getElementById("clients").setAttribute("class", "open-close-toggle");
+					document.getElementById("careers").setAttribute("class", "open-close-toggle");
+					document.getElementById("resources").setAttribute("class", "open-close-toggle");
+			        subnav.goToSlide(1);
+				}else if(buttonText == "INDUSTRIES"){
+					document.getElementById("firm").setAttribute("class", "open-close-toggle");
+					document.getElementById("services").setAttribute("class", "open-close-toggle");
+					document.getElementById("industries").setAttribute("class", "open-close-toggle active");
+					document.getElementById("clients").setAttribute("class", "open-close-toggle");
+					document.getElementById("careers").setAttribute("class", "open-close-toggle");
+					document.getElementById("resources").setAttribute("class", "open-close-toggle");
+			        subnav.goToSlide(2);
+				}else if(buttonText == "CLIENTS"){
+					document.getElementById("firm").setAttribute("class", "open-close-toggle");
+					document.getElementById("services").setAttribute("class", "open-close-toggle");
+					document.getElementById("industries").setAttribute("class", "open-close-toggle");
+					document.getElementById("clients").setAttribute("class", "open-close-toggle active");
+					document.getElementById("careers").setAttribute("class", "open-close-toggle");
+					document.getElementById("resources").setAttribute("class", "open-close-toggle");
+			        subnav.goToSlide(3);
+				}else if(buttonText == "CAREERS"){
+					document.getElementById("firm").setAttribute("class", "open-close-toggle");
+					document.getElementById("services").setAttribute("class", "open-close-toggle");
+					document.getElementById("industries").setAttribute("class", "open-close-toggle");
+					document.getElementById("clients").setAttribute("class", "open-close-toggle");
+					document.getElementById("careers").setAttribute("class", "open-close-toggle active");
+					document.getElementById("resources").setAttribute("class", "open-close-toggle");
+			        subnav.goToSlide(4);
+				}else if(buttonText == "RESOURCES"){
+					document.getElementById("firm").setAttribute("class", "open-close-toggle");
+					document.getElementById("services").setAttribute("class", "open-close-toggle");
+					document.getElementById("industries").setAttribute("class", "open-close-toggle");
+					document.getElementById("clients").setAttribute("class", "open-close-toggle");
+					document.getElementById("careers").setAttribute("class", "open-close-toggle");
+					document.getElementById("resources").setAttribute("class", "open-close-toggle active");
+			        subnav.goToSlide(5);
+				}
+			    });
+			$('#jb_close-toggle').click(function(){
+				$('#jb_toggle-section').slideUp();
+				document.getElementById("firm").setAttribute("class", "open-close-toggle");
+				document.getElementById("services").setAttribute("class", "open-close-toggle");
+				document.getElementById("industries").setAttribute("class", "open-close-toggle");
+				document.getElementById("clients").setAttribute("class", "open-close-toggle");
+				document.getElementById("careers").setAttribute("class", "open-close-toggle");
+				document.getElementById("resources").setAttribute("class", "open-close-toggle");
+				if(animateTop == false){
+					$('#supersized').animate({
+					    top: '-=175px'
+					  }, 400);
+					animateTop = true;
+				}
+			});	
+			$('#home').click(function(){
+				$('#jb_toggle-section').slideUp();
+				document.getElementById("firm").setAttribute("class", "open-close-toggle");
+				document.getElementById("services").setAttribute("class", "open-close-toggle");
+				document.getElementById("industries").setAttribute("class", "open-close-toggle");
+				document.getElementById("clients").setAttribute("class", "open-close-toggle");
+				document.getElementById("careers").setAttribute("class", "open-close-toggle");
+				document.getElementById("resources").setAttribute("class", "open-close-toggle");
+				if(animateTop == false){
+					$('#supersized').animate({
+					    top: '-=175px'
+					  }, 400);
+					animateTop = true;
+				}
+			});
+			$('#blog').click(function(){
+				$('#jb_toggle-section').slideUp();
+				document.getElementById("firm").setAttribute("class", "open-close-toggle");
+				document.getElementById("services").setAttribute("class", "open-close-toggle");
+				document.getElementById("industries").setAttribute("class", "open-close-toggle");
+				document.getElementById("clients").setAttribute("class", "open-close-toggle");
+				document.getElementById("careers").setAttribute("class", "open-close-toggle");
+				document.getElementById("resources").setAttribute("class", "open-close-toggle");
+				if(animateTop == false){
+					$('#supersized').animate({
+					    top: '-=175px'
+					  }, 400);
+					animateTop = true;
+				}
+			});
+		});
+		</script>
+	</head>
+<body>
+	<div id="jb_header_container">
+		<div id="jb_header">
+			<div class="jb_logo"><a href="index.html"><img src="img/logo.png"></a></div>
+			<div id="jb_partners"><a href="#"><img src="img/twitter.png"></a><a href="#"><img src="img/linkedin.png"></a><a href="#"><img src="img/facebook.png"></a></div>
+			<div id="jb_nav_container">
+				<div id="jb_headermenu">
+					<ul class="jb_nav">
+						<li><a class="open-close-toggle" id="firm">FIRM</a></li>
+						<li><a class="open-close-toggle" id="services">SERVICES</a></li>
+						<li><a class="open-close-toggle" id="industries">INDUSTRIES</a></li>
+						<li><a class="open-close-toggle" id="clients">CLIENTS</a></li>
+						<li><a class="open-close-toggle" id="careers">CAREERS</a></li>
+						<li><a class="open-close-toggle" id="resources">RESOURCES</a></li>
+						<li><a class="open-close-toggle" id="blog">BLOG</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="jb_toggle-section_container">
+	    	<div id="jb_toggle-section">
+				<div id="jb_subnav_container">
+				<div id="jb_subnav">
+					<div class="jb_subnav_section"><ul>
+							<li><a href="about.html">About</a>
+								<ul>
+									<li><a href="mission.html">Mission &amp; Values</a></li>
+									<li><a href="letter.html">Letter from President</a></li>
+								</ul>
+							</li>
+													<li><a href="team.html">Leadership Team</a>
+                             <ul>
+                            <li><a href="team.html">Bios</a></li>
+                            </ul>
+                            </li>
+							<li><a href="affiliates.html">Affiliates</a>
+								<ul>
+									<li><a href="http://www.potentiamed.com" target="_blank">PotentiaMed</a></li>
+									<li><a href="http://www.fidelityadvisory.com" target="_blank">FAN</a></li>
+									<li><a href="http://www.gabrielmanagement.com" target="_blank">TGMG</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+			  		<div class="jb_subnav_section">
+						<ul>
+							<li><a href="#">Performance Optimization</a>
+								<ul>
+									<li><a href="#">Roadmap Strategy</a></li>
+									<li><a href="#">Performance Management</a></li>
+									<li><a href="#">Planning</a></li>
+									<li><a href="#">Analytics &amp; Predictive Modeling</a></li>
+									<li><a href="#">Business Intelligence</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Information Management</a>
+								<ul>
+									<li><a href="#">Data Governance</a></li>
+									<li><a href="#">Data Quality</a></li>
+									<li><a href="#">Data Integration</a></li>
+									<li><a href="#">Data Warehouse</a></li>
+									<li><a href="#">Master Data Management</a></li>
+									<li><a href="#">Portals &amp; Content Management</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Consulting</a>
+								<ul>
+									<li><a href="#">Project Delivery</a></li>
+									<li><a href="#">Talent Engagement</a></li>
+									<li><a href="#">Litigation Support</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Enterprise Solutions</a>
+								<ul>
+									<li><a href="#">Custom Application Development</a></li>
+									<li><a href="#">Java/J2EE</a></li>
+									<li><a href="#">Microsoft</a></li>
+									<li><a href="#">Enterprise Web 2.0</a></li>
+									<li><a href="#">Systems Integration</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Outsourcing</a></li>
+						</ul>
+			  		</div>
+			  		<div class="jb_subnav_section">
+						<ul>
+							<li><a href="#">Insurance</a></li>
+							<li><a href="#">Healthcare &amp; Life Sciences</a>
+								<ul>
+									<li><a href="#">Payers</a></li>
+									<li><a href="#">Providers</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Financial Services</a></li>
+							<li><a href="#">Other Industries</a></li>
+						</ul>
+					</div>
+			  		<div class="jb_subnav_section">
+			  			<ul>
+							<li><a href="#">Representative Clients</a></li>
+							<li><a href="#">Prospective Clients</a></li>
+							<li><a href="#">Testimonials</a></li>
+						</ul>
+			  		</div>
+					<div class="jb_subnav_section">
+						<ul>
+							<li><a href="#">Current Opportunities</a></li>
+							<li><a href="#">Refer a Friend</a></li>
+						</ul>
+					</div>
+					<div class="jb_subnav_section">
+						<ul>
+							<li><a href="#">Downloads</a></li>
+							<li><a href="#">News &amp; Events</a></li>
+							<li><a href="#">Videos</a></li>
+							<li><a href="#">IBM</a></li>
+							<li><a href="#">Microsoft</a></li>
+							<li><a href="#">Oracle</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="jb_close-toggle"><img src="img/up_arrow.png"></div>
+			</div>
+		</div>
+	</div>
+    <!--Start Main Content-->
+    
+    <div id="jbMain">
+    <div class="innerCont">
+	<!--<div id="jb_headline_wrapper">
+		<div id="jb_headline_container">
+			<div id="jb_headline">
+			  	<div id="jb_headline_content"><span class="jb_headline_text">Leadership Team</span></div>
+			</div>
+		</div>
+	</div>-->
+    <div id="jb_headline_container">
+    <span class="jb_headline_content">Mission</span>
+    <div class="mainRule"></div>
+    </div>
+	<div id="jb_content_bio">
+
+   <div class="mainBio">
+   <h2>Mission</h2>
+   <p>To provide our clients better information to give them greater insight to create optimal performance and cultivating long term relationships built on our core values: Excellence, Integrity, Accountability, Quality and Enthusiasm.</p>
+   </div>
+   <div class="dottedRule2"></div>
+      <div class="mainBio">
+   <h2>Core Values</h2>
+   <p><strong>excellence:</strong> Our purpose is to serve our clients through assisting them in the creation of genuine and enduring value for the enterprises where we invest our time.</p>
+   <p><strong>integrity:</strong> We believe if we serve our clients well, our own success will follow.</p>
+      <p><strong>accountability:</strong> We believe in empowering people and enterprises to succeed and in rewarding success. To do so, we endeavor to foster an entrepreneurial culture while maintaining timelines and accountability that are vital to our success.</p>
+            <p><strong>quality:</strong> We take great pride in the professional quality of our work, and strive to identify and recruit only those with an uncompromising determination to achieve excellence.</p>
+                        <p><strong>enthusiasm:</strong> We truly enjoy our work and believe personal satisfaction is a core element of success. The dedication of our people to the firm and the intense effort they provide for our clients is indicative of people who are passionate about their field.
+
+</p>
+   </div>
+      <div class="dottedRule2"></div>
+   <div class="spcr"></div>
+	</div>
+  <div class="rtBio">
+  <div class="mainBox">
+  <h1>Contact Us</h1>
+  <div class="topMn">
+ 
+  <table class="inside" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="img/phone.jpg" alt="" width="22" height="18" /></td>
+    <td>888-870-8920</td>
+  <tr>    <td><a href="mailto:info@amitechsolutions.com"><img src="img/email.jpg" alt="" width="19" height="14" /></a></td>
+    <td><a href="mailto:info@amitechsolutions.com">Email</a></td>
+    </tr>
+</table>
+  </div>
+<!--  <h1><span class="jb_box_title">Performance Optimized</span></h1>
+  <div class="topMn2">
+  <img src="img/performance_optimized.jpg" /><p>Amitech Solutions provides our clients with the access to information, technology tools, and advisory services necessary to make critical business decisions.</p>
+  </div>-->
+  </div>
+  <div class="mainBox2">
+  <h1>Performance Optimized</h1>
+  <div class="topMn2">
+ 
+    <img src="img/performance_optimized.jpg" /><p>Amitech Solutions provides our clients with the access to information, technology tools, and advisory services necessary to make critical business decisions.</p>
+  </div>
+<!--  <h1><span class="jb_box_title">Performance Optimized</span></h1>
+  <div class="topMn2">
+  <img src="img/performance_optimized.jpg" /><p>Amitech Solutions provides our clients with the access to information, technology tools, and advisory services necessary to make critical business decisions.</p>
+  </div>-->
+  </div>
+  </div>  
+    </div></div>
+    <div class="shadow"></div>
+    
+	<div id="jb_bottom_nav_container">
+		<div id="jb_bottom_nav">
+			<ul>
+				<li><a href="#">Performance Optimization</a>
+					<ul>
+						<li><a href="#">Performance Management</a></li>
+						<li><a href="#">Planning</a></li>
+						<li><a href="#">Analytics &amp; Predictive Modeling</a></li>
+						<li><a href="#">Business Intelligence</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Information Management</a>
+					<ul>
+						<li><a href="#">Data Governance</a></li>
+						<li><a href="#">Data Quality</a></li>
+						<li><a href="#">Data Integration</a></li>
+						<li><a href="#">Data Warehouse</a></li>
+						<li><a href="#">Master Data Management</a></li>
+						<li><a href="#">Portals and Content Management</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Consulting</a>
+					<ul>
+						<li><a href="#">Performance Optimization</a></li>
+						<li><a href="#">Project Delivery</a></li>
+						<li><a href="#">Talent Engagement</a></li>
+						<li><a href="#">Enterprise Solutions</a></li>
+						<li><a href="#">Custom Application Development</a></li>
+						<li><a href="#">Java/J2EE</a></li>
+						<li><a href="#">Microsoft</a></li>
+						<li><a href="#">Enterprise Web 2.0</a></li>
+						<li><a href="#">Systems Integration</a></li>
+						<li><a href="#">Outsourcing</a></li>
+					</ul>
+				</li>
+				<li><a href="#">News &amp; Events</a>
+					<ul>
+						<li class="jb_event"><a href="#">September 06, 2011<br />Join Amitech Solutions at the TWDI<br/ >Meeting on September 16 &gt;</a></li>
+						<li class="jb_event"><a href="#">June 23, 2011<br />Amitech Solutions to host webinar,<br/ >"Data Governance for IT and Business<br />Leaders", on July 14 &gt;</a></li>
+						<li class="jb_event"><a href="#">May 19, 2011<br />Join Amitech Solutions at the TWDI<br/ >Meeting on June 3 &gt;</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="jb_footer">
+		<div id="jb_footer_box">
+			<div class="jb_copy">1999 - 2012 Amitech Solutions Inc. - St. Louis Leader in BI</div>
+			<div class="jb_footer_nav">
+				<ul>
+					<li><a href="#">Privacy &amp; Legal Disclaimer |</a></li>
+					<li><a href="#">Contact Us |</a></li>
+					<li><a href="#">Site Map</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>	</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+/* COLOR SHADES */
+
+/*
+
+BACKGROUND: #23282e
+LIGHTER: #165587 
+LIGHTEST: #377eff
+
+*/
+
+/* PRIMARY ELEMENTS */
+
+body {
+	background: #23282e url(../../images/skin/footer-slate.png) 0 bottom repeat-x;
+}
+
+#wrapper {
+	background: #23282e url(../../images/skin/diag2-slate.jpg) center 0 no-repeat;
+}
+
+/* CLASSES */
+
+.highlight {
+	color: #165587;
+}
+
+/* TYPOGRAPHY */
+
+a,
+h2 a:hover,
+.nav-entries a:hover,
+#sidebar li a:hover {
+	color: #377eff;
+}
+
+a:hover {
+	color: #23282e;
+}
+
+/* COPYRIGHT */
+
+#copyright .menu a:hover {
+	color: #165587;
+}

@@ -1,0 +1,220 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Smart Slideshow Widget\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-02-19 01:23+0100\n"
+"PO-Revision-Date: 2012-02-19 01:24+0100\n"
+"Last-Translator: Rubén Trujillo <rubentrf@gmail.com>\n"
+"Language-Team: Lamedalla <rubentrf@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: SPAIN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../smart-slideshow-widget.php:38
+msgid "\"Smart Slideshow Widget\" Options"
+msgstr "Opciones de \"Smart Slideshow Widget\""
+
+#: ../smart-slideshow-widget.php:42
+msgid "This plugin will show a widget in the sidebar featuring a <strong>Slideshow</strong> of images you choose."
+msgstr "Este plugin muestra un widget en la barra lateral con una <strong>presentación</strong> con las imágenes que elijas."
+
+#: ../smart-slideshow-widget.php:43
+#, php-format
+msgid "All you have to do is to <a href=\"%s/wp-admin/widgets.php\" title=\"Widget configuration page\">add a new widget</a> of Smart Slideshow Widget to your sidebar and configure it: image folder, url, effect..."
+msgstr "Todo lo que tienes que hacer es <a href=\"%s/wp-admin/widgets.php\" title=\"Panel de configuración de widgets\">añadir un nuevo widget</a> de Smart Slideshow Widget a tu barra lateral y configurarlo: carpeta de imágenes, url, efecto..."
+
+#: ../smart-slideshow-widget.php:45
+msgid "If you <strong>like it</strong>, consider posting a comment in the official plugin post at <strong>my blog</strong>, <a href=\"http://lamedalla.es/decarton\" target=\"_blank\" title=\"La Medalla de Cartón\">La Medalla de Cartón</a> or making a donation."
+msgstr "Si <strong>te gusta</strong>, deja un comentario en la entrada oficial del plugin en <strong>mi blog</strong>, <a href=\"http://lamedalla.es/decarton\" target=\"_blank\" title=\"La Medalla de Cartón\">La Medalla de Cartón</a> o haz una donación."
+
+#: ../smart-slideshow-widget.php:95
+msgid "A new slideshow widget for your sidebar."
+msgstr "Un widget de presentación de imágenes para tu barra lateral."
+
+#: ../smart-slideshow-widget.php:100
+msgid "Fade"
+msgstr "Desvanecer"
+
+#: ../smart-slideshow-widget.php:101
+msgid "Curtain up"
+msgstr "Subir cortina"
+
+#: ../smart-slideshow-widget.php:102
+msgid "Double blind"
+msgstr "Cortina doble"
+
+#: ../smart-slideshow-widget.php:103
+msgid "Shrink"
+msgstr "Encoger"
+
+#: ../smart-slideshow-widget.php:104
+msgid "Switch Off"
+msgstr "Apagado"
+
+#: ../smart-slideshow-widget.php:105
+msgid "Bounce Down"
+msgstr "Rebote inferior"
+
+#: ../smart-slideshow-widget.php:106
+msgid "Slide Left"
+msgstr "Desplazar a la izquierda"
+
+#: ../smart-slideshow-widget.php:107
+msgid "Slide Right"
+msgstr "Desplazar a la derecha"
+
+#: ../smart-slideshow-widget.php:108
+msgid "Slide Up"
+msgstr "Desplazar hacia arriba"
+
+#: ../smart-slideshow-widget.php:109
+msgid "Slide Down"
+msgstr "Desplazar hacia abajo"
+
+#: ../smart-slideshow-widget.php:111
+#: ../smart-slideshow-widget.php:117
+msgid "Random"
+msgstr "Aleatorio"
+
+#: ../smart-slideshow-widget.php:116
+msgid "Regular"
+msgstr "Normal"
+
+#: ../smart-slideshow-widget.php:118
+msgid "Reverse"
+msgstr "Inverso"
+
+#: ../smart-slideshow-widget.php:119
+msgid "By date (ascending)"
+msgstr "Por fecha (ascendente)"
+
+#: ../smart-slideshow-widget.php:120
+msgid "By date (descending)"
+msgstr "Por fecha (descendente)"
+
+#: ../smart-slideshow-widget.php:297
+msgid "Title"
+msgstr "Título"
+
+#: ../smart-slideshow-widget.php:301
+msgid "Image folder"
+msgstr "Carpeta de imágenes"
+
+#: ../smart-slideshow-widget.php:303
+msgid "Folder where you have stored the images. Relatives are considered to <code>wp-content</code> folder of your Wordpress installation."
+msgstr "Carpeta donde están almacenadas las imágenes. Si es una ruta relativa se considerará respecto a <code>wp-content</code> de tu instalación de Wordpress."
+
+#: ../smart-slideshow-widget.php:308
+msgid "Image URL"
+msgstr "URL de las imágenes"
+
+#: ../smart-slideshow-widget.php:310
+msgid "URL for the folder where you have stored the images, a full URL starting with <code>http://</code>."
+msgstr "URL de la carpeta donde están almacenadas las imágenes, URL completa empezando por <code>http://</code>."
+
+#: ../smart-slideshow-widget.php:316
+msgid "Effect"
+msgstr "Efecto"
+
+#: ../smart-slideshow-widget.php:318
+msgid "The effect between image transitions."
+msgstr "El efecto entre transiciones."
+
+#: ../smart-slideshow-widget.php:337
+msgid "Delay"
+msgstr "Retardo"
+
+#: ../smart-slideshow-widget.php:339
+msgid "The delay (in seconds) between image transitions."
+msgstr "El retardo (en segundos) entre transiciones."
+
+#: ../smart-slideshow-widget.php:341
+msgid "seconds"
+msgstr "segundos"
+
+#: ../smart-slideshow-widget.php:344
+msgid "Animation speed"
+msgstr "Velocidad de la animación"
+
+#: ../smart-slideshow-widget.php:346
+msgid "The speed for the selected transition (in mili seconds)."
+msgstr "La velocidad para la transición seleccionada (en milisegundos)."
+
+#: ../smart-slideshow-widget.php:348
+msgid "miliseconds"
+msgstr "milisegundos"
+
+#: ../smart-slideshow-widget.php:351
+msgid "Order"
+msgstr "Orden"
+
+#: ../smart-slideshow-widget.php:353
+msgid "The order of the images displayed."
+msgstr "El orden de las imágenes mostradas."
+
+#: ../smart-slideshow-widget.php:367
+msgid "Custom Style"
+msgstr "Estilo personalizado"
+
+#: ../smart-slideshow-widget.php:369
+msgid "Sets a current style for the images shown in the slideshow."
+msgstr "Establece un estilo personalizado para las imágenes de la presentación."
+
+#: ../smart-slideshow-widget.php:369
+msgid "If you need to use quotes, use doubles instead of single (<code>\"</code> and not <code>'</code>)."
+msgstr "Si necesitas usar comillas, usa dobles en lugar de simples (<code>\\\"</code> y no <code>'</code>)."
+
+#: ../smart-slideshow-widget.php:374
+msgid "Link for images"
+msgstr "Enlace para las imágenes"
+
+#: ../smart-slideshow-widget.php:376
+msgid "Defines a link for the slideshow images."
+msgstr "Define un enlace para las imágenes de la presentación."
+
+#: ../smart-slideshow-widget.php:378
+msgid "Open link on a new window/tab"
+msgstr "Abrir enlace en una nueva ventana/pestaña"
+
+#: ../smart-slideshow-widget.php:383
+msgid "Show previous/next slide buttons"
+msgstr "Mostrar los botones de imagen previa/siguiente"
+
+#: ../smart-slideshow-widget.php:385
+msgid "Display previous and next slide controls."
+msgstr "Mostrar los botones de previa y siguiente imagen."
+
+#: ../smart-slideshow-widget.php:387
+msgid "Do not autorun"
+msgstr "No auto arrancar"
+
+#: ../smart-slideshow-widget.php:389
+msgid "Do not run the slideshow automatically, only using the built in controls."
+msgstr "No arrancar la presentación automáticamente, sólo usando los botones."
+
+#, fuzzy
+#~ msgid "All you have to do is to <a href=\""
+#~ msgstr "¿Estás seguro de que quieres <a href='%s'>desconectarte</a>?"
+
+#~ msgid "Configuration"
+#~ msgstr "Configuración"
+
+#~ msgid "Folder where you have stored the images."
+#~ msgstr "Carpeta donde están almacenadas las imágenes."
+
+#~ msgid ""
+#~ "You <strong>must</strong> enter a full URL starting with <code>http://</"
+#~ "code>"
+#~ msgstr ""
+#~ "<strong>Debes</strong> introducir una URL completa empezando por "
+#~ "<code>http://</code>"
+
+#~ msgid "Save Options"
+#~ msgstr "Guardar opciones"

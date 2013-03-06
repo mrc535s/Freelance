@@ -1,0 +1,137 @@
+body {
+	background: #282828;
+}
+
+#main-wrapper {
+	background: #282828;
+	overflow: inherit;
+}
+
+#main-top {
+	background: url(../../images/shape/main-top-stretch-dark.png) repeat-x;
+	height: 50px;
+}
+
+#main {
+	margin: 0 auto;
+	padding: 15px 0;
+	width: 960px;
+}
+
+/* MENU */
+
+#main-menu .flip-black,
+#main-menu .flip-blue,
+#main-menu .flip-brown,
+#main-menu .flip-dark-purple,
+#main-menu .flip-dark,
+#main-menu .flip-green,
+#main-menu .flip-light-blue,
+#main-menu .flip-light,
+#main-menu .flip-navy,
+#main-menu .flip-orange,
+#main-menu .flip-pink,
+#main-menu .flip-purple,
+#main-menu .flip-red,
+#main-menu .flip-slate,
+#main-menu .flip-teal {
+	top: -8px;
+}
+
+#main-menu .classic-black,
+#main-menu .classic-blue,
+#main-menu .classic-brown,
+#main-menu .classic-dark-purple,
+#main-menu .classic-dark,
+#main-menu .classic-green,
+#main-menu .classic-light-blue,
+#main-menu .classic-light,
+#main-menu .classic-navy,
+#main-menu .classic-orange,
+#main-menu .classic-pink,
+#main-menu .classic-purple,
+#main-menu .classic-red,
+#main-menu .classic-slate,
+#main-menu .classic-teal {
+	margin: 0;
+	position: absolute;
+	top: -10px;
+	left: 0;
+	width: 100%;
+}
+
+#main-menu .classic-black .menu-left,
+#main-menu .classic-blue .menu-left,
+#main-menu .classic-brown .menu-left,
+#main-menu .classic-dark-purple .menu-left,
+#main-menu .classic-dark .menu-left,
+#main-menu .classic-green .menu-left,
+#main-menu .classic-light-blue .menu-left,
+#main-menu .classic-light .menu-left,
+#main-menu .classic-navy .menu-left,
+#main-menu .classic-orange .menu-left,
+#main-menu .classic-pink .menu-left,
+#main-menu .classic-purple .menu-left,
+#main-menu .classic-red .menu-left,
+#main-menu .classic-slate .menu-left,
+#main-menu .classic-teal .menu-left,
+#main-menu .classic-black .menu-right,
+#main-menu .classic-blue .menu-right,
+#main-menu .classic-brown .menu-right,
+#main-menu .classic-dark-purple .menu-right,
+#main-menu .classic-dark .menu-right,
+#main-menu .classic-green .menu-right,
+#main-menu .classic-light-blue .menu-right,
+#main-menu .classic-light .menu-right,
+#main-menu .classic-navy .menu-right,
+#main-menu .classic-orange .menu-right,
+#main-menu .classic-pink .menu-right,
+#main-menu .classic-purple .menu-right,
+#main-menu .classic-red .menu-right,
+#main-menu .classic-slate .menu-right,
+#main-menu .classic-teal .menu-right {
+	display: none;
+}
+
+#main-menu .classic-black .menu-middle,
+#main-menu .classic-blue .menu-middle,
+#main-menu .classic-brown .menu-middle,
+#main-menu .classic-dark-purple .menu-middle,
+#main-menu .classic-dark .menu-middle,
+#main-menu .classic-green .menu-middle,
+#main-menu .classic-light-blue .menu-middle,
+#main-menu .classic-light .menu-middle,
+#main-menu .classic-navy .menu-middle,
+#main-menu .classic-orange .menu-middle,
+#main-menu .classic-pink .menu-middle,
+#main-menu .classic-purple .menu-middle,
+#main-menu .classic-red .menu-middle,
+#main-menu .classic-slate .menu-middle,
+#main-menu .classic-teal .menu-middle {
+	width: 100%;
+}
+
+#main-menu .classic-black .menu-middle-inner,
+#main-menu .classic-blue .menu-middle-inner,
+#main-menu .classic-brown .menu-middle-inner,
+#main-menu .classic-dark-purple .menu-middle-inner,
+#main-menu .classic-dark .menu-middle-inner,
+#main-menu .classic-green .menu-middle-inner,
+#main-menu .classic-light-blue .menu-middle-inner,
+#main-menu .classic-light .menu-middle-inner,
+#main-menu .classic-navy .menu-middle-inner,
+#main-menu .classic-orange .menu-middle-inner,
+#main-menu .classic-pink .menu-middle-inner,
+#main-menu .classic-purple .menu-middle-inner,
+#main-menu .classic-red .menu-middle-inner,
+#main-menu .classic-slate .menu-middle-inner,
+#main-menu .classic-teal .menu-middle-inner {
+	position: relative;
+}
+
+/* COPYRIGHT */
+
+#copyright {
+	padding: 20px 10px;
+}
+

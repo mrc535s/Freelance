@@ -1,0 +1,29 @@
+.megamenu_container, 
+.megamenu_container_vertical {
+	background-image:none;
+}
+.megamenu li .drop {
+	background:url("../img/down.gif") no-repeat right center;
+}
+.megamenu li ul li {
+	width:130px;
+}
+.megamenu .imgshadow {
+	padding:3px;
+}
+.megamenu ul.list, 
+.megamenu ul.list2, 
+.megamenu ol.num, 
+.megamenu ol.num2 {
+	margin:0 0 18px 15px;
+}
+.megamenu ul.list li, 
+.megamenu ul.list2 li, 
+.megamenu ol.num li, 
+.megamenu ol.num2 li{
+	padding:0;
+	width:90px;
+}
+.megamenu_container_vertical .megamenu li .drop {
+	background:url("../img/right.gif") no-repeat right center;
+}

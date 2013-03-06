@@ -1,0 +1,44 @@
+/* COLOR SHADES */
+
+/*
+
+BACKGROUND: #7a0951
+LIGHTER: #be1480 
+LIGHTEST: #fb13a7
+
+*/
+
+/* PRIMARY ELEMENTS */
+
+body {
+	background: #7a0951 url(../../images/skin/footer-pink.png) 0 bottom repeat-x;
+}
+
+#wrapper {
+	background: #7a0951 url(../../images/skin/splatter-pink.jpg) center 0 no-repeat;
+}
+
+/* CLASSES */
+
+.highlight {
+	color: #be1480;
+}
+
+/* TYPOGRAPHY */
+
+a,
+h2 a:hover,
+.nav-entries a:hover,
+#sidebar li a:hover {
+	color: #fb13a7;
+}
+
+a:hover {
+	color: #7a0951;
+}
+
+/* COPYRIGHT */
+
+#copyright .menu a:hover {
+	color: #be1480;
+}

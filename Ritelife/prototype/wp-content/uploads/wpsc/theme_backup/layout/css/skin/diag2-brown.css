@@ -1,0 +1,44 @@
+/* COLOR SHADES */
+
+/*
+
+BACKGROUND: #37261c
+LIGHTER: #7b5138 
+LIGHTEST: #a76c49
+
+*/
+
+/* PRIMARY ELEMENTS */
+
+body {
+	background: #37261c url(../../images/skin/footer-brown.png) 0 bottom repeat-x;
+}
+
+#wrapper {
+	background: #37261c url(../../images/skin/diag2-brown.jpg) center 0 no-repeat;
+}
+
+/* CLASSES */
+
+.highlight {
+	color: #7b5138;
+}
+
+/* TYPOGRAPHY */
+
+a,
+h2 a:hover,
+.nav-entries a:hover,
+#sidebar li a:hover {
+	color: #a76c49;
+}
+
+a:hover {
+	color: #37261c;
+}
+
+/* COPYRIGHT */
+
+#copyright .menu a:hover {
+	color: #7b5138;
+}

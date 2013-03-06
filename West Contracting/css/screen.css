@@ -1,0 +1,84 @@
+body {
+	
+	}
+		
+	img{border:none;}
+			
+    /* image replacement */
+        .graphic, #prevBtn, #nextBtn, #slider1prev, #slider1next{
+            margin:0;
+            padding:0;
+            display:block;
+            overflow:hidden;
+            text-indent:-8000px;
+            }
+    /* // image replacement */
+			
+	#container{	
+		margin:0 auto;
+		position:relative;
+		text-align:left;
+		width:850px;
+		background:#fff;		
+		margin-bottom:2em;
+		}				
+	#content{
+		position:relative;
+		}			
+
+/* Easy Slider */
+#slider {margin-left: 46px;}
+	#slider ul, #slider li,
+	#slider2 ul, #slider2 li{
+		margin:0;
+		padding:0;
+		list-style:none;
+		}
+	#slider2{margin-top:1em;}
+	#slider li, #slider2 li{ 
+		/* 
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/ 
+		width:850px;
+		height:331px;
+		overflow:hidden; 
+		}
+		
+		#prevBtn {width: 31px; height:31px; position: absolute; z-index:2000; left:5px; top: 300px;}	
+		#nextBtn {width: 31px; height:31px; position: absolute; z-index:2000; left:905px; top: 300px;}
+	
+	#slider1next, #slider1prev{ 
+		display:block;
+		width:30px;
+		height:77px;
+		position:absolute;
+		left:-30px;
+		top:71px;
+		z-index:1000;
+		}	
+	/*#nextBtn, */#slider1next{ 
+		left:620px;
+		}														
+	#prevBtn a, #nextBtn a,
+	#slider1next a, #slider1prev a{  
+		display:block;
+		position:relative;
+		width:31px;
+		height:31px;
+		/*background:url(../images/btn_prev.gif) no-repeat 0 0;*/	
+		background:url(../images/home_slides/leftarrow.png) no-repeat 0 0;
+		}	
+	#nextBtn a, #slider1next a{ 
+		/*background:url(../images/btn_next.gif) no-repeat 0 0;*/
+		background:url(../images/home_slides/rightarrow.png) no-repeat 0 0;	
+		}	
+		
+		/*#nextBtn {left: 700px;}*/
+		
+#prevBtn a:focus, #nextBtn a:focus{outline:none;}
+	
+/* // Easy Slider */
+
+*:first-child+html #prevBtn {width: 31px; height:31px; position: absolute; z-index:2000; left:3px; top: -185px;}
+*:first-child+html #nextBtn {width: 31px; height:31px; position: absolute; z-index:2000; left:905px; top: -185px;}

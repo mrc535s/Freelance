@@ -1,0 +1,44 @@
+/* COLOR SHADES */
+
+/*
+
+BACKGROUND: #133735
+LIGHTER: #267672 
+LIGHTEST: #2daba4
+
+*/
+
+/* PRIMARY ELEMENTS */
+
+body {
+	background: #133735 url(../../images/skin/footer-teal.png) 0 bottom repeat-x;
+}
+
+#wrapper {
+	background: #133735 url(../../images/skin/bokeh-teal.jpg) center 0 no-repeat;
+}
+
+/* CLASSES */
+
+.highlight {
+	color: #267672;
+}
+
+/* TYPOGRAPHY */
+
+a,
+h2 a:hover,
+.nav-entries a:hover,
+#sidebar li a:hover {
+	color: #2daba4;
+}
+
+a:hover {
+	color: #288782;
+}
+
+/* COPYRIGHT */
+
+#copyright .menu a:hover {
+	color: #267672;
+}

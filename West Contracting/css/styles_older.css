@@ -1,0 +1,321 @@
+@charset "UTF-8";
+body {
+	font: 14px Tahoma, Geneva, sans-serif; line-height:18px;
+	background:url(../images/main_bkg.gif) top left repeat;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Element/tag selectors ~~ */
+
+h1 {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	font-size: 24px; font-weight:bold; padding:0; color: #656363; width: 800px;
+}
+
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #0367a6;
+	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #afafaf;
+	text-decoration: none;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: underline;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 940px;
+	background: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */margin-top: 45px;
+}
+.containerHome {
+	width: 940px;
+	background: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */margin-top: 45px;
+}
+.socialTop {width: 940px; margin: 0 auto; position: absolute; margin-top: -45px; margin-left: 680px;}
+.socialTop ul {width: 940px;}
+.socialTop ul li {list-style-type: none; padding: 3px; display: inline; color: #5d5d5d; font-size:12px; font-weight:normal;}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+#topHdr1 {width: 100%; height: 5px; background: #6a6a6a;}
+#topHdr2 {width: 100%; height: 63px; background: #fff;}
+#topHdr2 .leftLogo {float: left; margin-top: 6px; margin-left: 30px;}
+#topHdr2 .rtLogo {float: right; margin-right: 30px;}
+#header {
+	background: #828282; height:31px;
+}
+.bttm1 {height: 4px; width: 100%; background:#fff;}
+.bttm2 {height: 4px; width: 100%; background:#828282;}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+#content {
+
+	padding: 10px 0;
+}
+/* for home page */
+#content .top {float: left; background:#fff; width: 100%;}
+#content .top .leftSide {float: left; padding-top: 24px; padding-left: 55px; padding-bottom: 30px;}
+#content .top .rightSide img {margin-left: 130px;}
+#content .top .rightSide {float: right; padding-top: 10px; padding-right: 45px;}
+.rtLnk {text-align:center; margin-top:-5px;}
+.rtLnk a, .rtLnk a:link, .rtLnk a:visited, .rtLnk a:active, .rtLnk a:hover {font-size:14px; text-decoration:underline; font-weight:bold; color: #0367a6;}
+
+#content .jqueryBox {float: left; width: 940px; height: 327px;}
+#content .hmNews {float: left; width: 940px; background:#fff; text-align:center; color: #828282; padding-top: 58px; padding-bottom: 58px; }
+#content .hmNews a, #content .hmNews a:link, #content .hmNews a:visited, #content .hmNews a:active {color: #828282; text-decoration:none;}
+#content .hmNews a:hover {text-decoration: underline;}
+/*secondary pages */
+#content .main {width: 100%; float:left; background: #fff; padding-bottom: 20px; height: 547px; min-height:547px;}
+#content .main .leftCol {float: left; width: 285px; margin-left: 40px; margin-top: 32px;}
+#content .main .leftCol img {float: left;}
+#content .main .rtCol {float: left; margin-top:66px;}
+#content .main .rtCol h2 {width: 609px; font-size: 14px; font-weight:bold; background: #828282; color: #fff; margin:0; padding: 3px;}
+#content .main .rtCol h2 a, #content .main .rtCol h2 a:link, #content .main .rtCol h2 a:visited, #content .main .rtCol h2 a:active {text-decoration: none; color:#fff; font-size: 14px; font-weight:bold;}
+#content .main .rtCol h2 a:hover {text-decoration: underline; color:#fff; font-size: 14px; font-weight:bold;}
+
+#content .main .fullCol {float: left; margin-top:10px;}
+#content .main h1.fullPg {margin-top: 10px; margin-left: 20px;
+	font-size: 24px; font-weight:bold; padding-top:10px; color: #656363;}
+#content .main .fullCol h2 {width: 910px; font-size: 14px; font-weight:bold; background: #828282; color: #fff; margin:0; padding: 3px 10px 3px 20px;}
+#content .main .fullCol hr {height: 1px; border:none; color: #828282; background-color: #828282;}
+
+#content .main .fullCol .lftSide {width: 400px; display: inline-block;}
+#content .main .fullCol .rtSide {float: right; width: 400px; }
+
+#jqueryHome {width: 940px; height: 331px; margin-left:0px; float:left; background: #fff;}
+
+h1.upm {margin-top: -12px;}
+
+#mycustomscroll {
+width: 585px;
+height: 420px;
+overflow: auto;
+position: relative;
+background-color: #fff;
+margin: 0px 0px 15px 0px;
+padding: 0px 15px 15px 0px; text-align:left; float:left; border:none; outline:none;
+}
+
+#mycustomscroll2 {
+width: 890px;
+height: 420px;
+overflow: auto;
+position: relative;
+background-color: #fff;
+margin: 0px 0px 15px 20px;
+padding: 0px 15px 15px 0px; text-align:left; float:left; border:none; outline:none;
+}
+
+.scrollCont {font-size: 14px; line-height:17px; color: #656363;}
+.scrollCont h1 {font-size: 14px; font-weight:bold;}
+.scrollCont h1 .smTxt {font-size: 12px; font-weight:normal;}
+.scrollCont .imgSp {margin-top: 13px;}
+.scrollCont .vid {font-size: 14px; font-weight:bold;}
+.scrollCont img.logos {padding: 5px 5px 25px 5px;}
+.scrollCont img.photos {float:left; padding-right: 20px;}
+.scrollCont .spcr {clear:both; padding-top: 20px;}
+
+.scrollCont .map {}
+.scrollCont .map ul {margin:0px 0px 0px 20px; padding:0;}
+.scrollCont .map ul li {list-style-type: none; background:url(../images/sitemap_arrow.gif) 0px 4px no-repeat; padding-left: 12px; padding-bottom: 5px;}
+.scrollCont .map ul li ul li {list-style-type: none; background:url(../images/sitemap_arrow2.gif) 0px 4px no-repeat; padding-left: 12px; padding-bottom: 5px;}
+.scrollCont .map ul li.regFx {list-style-type: none; background:url(../images/sitemap_arrow2.gif) 0px 10px no-repeat; padding-left: 12px; padding-bottom: 5px; margin-top: -4px;}
+
+.scrollCont .lftLogos {float: left; width: 300px;}
+.scrollCont .rtLogos {float: left;}
+
+.scrollCont ul.gogreen {margin:0px; padding:0; display: block;}
+
+.scrollCont ul.gogreen li {list-style-type:disc; margin-left:20px; padding:5px; display:list-item;}
+#navs
+{	margin: 0px 0px 0px 8px;
+	padding: 0; width: 100%;}
+#navs ul {z-index: 10;}
+	#navs li
+	{	float: left;
+		list-style: none;
+		font: 12px Tahoma, Arial; font-weight:bold; padding: 0px 9px 0px 9px;}
+
+	#navs li a
+	{	display: block;
+		background: none;
+		padding: 9px 12px;
+		text-decoration: none;
+		width: auto;
+		color: #dadada;
+		white-space: nowrap}
+
+#navs li a.on {background: url(../images/nav_arrow.gif) 0px 11px no-repeat; color: #fff;}
+	#navs li a:hover
+	{	background: url(../images/nav_arrow.gif) 0px 11px no-repeat; color: #fff;}
+	
+#navs li a.onreg {background: none; color: #dadada; margin-top: -4px; display:inline-block;}
+	#navs li a:hover.onreg
+	{	background: url(../images/nav_arrow.gif) 0px 17px no-repeat; color: #fff;}
+	
+	#navs li a.onreg2 {background: url(../images/nav_arrow.gif) 0px 17px no-repeat; color: #fff; margin-top: -4px; display:inline-block;}
+	#navs li a:hover .onreg2
+	{	background: url(../images/nav_arrow.gif) 0px 13px no-repeat; color: #fff;}
+		
+		#navs li ul
+		{	margin: 0px 0px 0px 0px;
+			padding: 0;
+			position: absolute;
+			visibility: hidden;
+			border: 1px solid white;}
+		
+			#navs li ul li
+			{	float: none;
+				display: inline; padding: 0;}
+			
+			#navs li ul li a
+			{	width: auto;
+				background: #828282;
+				color: #dadada; border-bottom: 1px solid #fff;}
+			
+			#navs li ul li a:hover
+			{background: #828282 url(../images/nav_arrow.gif) 0px 11px no-repeat; color: #fff;}
+			
+					#navs li ul li a.last
+			{	width: auto;
+				background: #828282;
+				color: #dadada; border:none;}
+			
+			#navs li ul li a.last:hover
+			{background: #828282 url(../images/nav_arrow.gif) 0px 11px no-repeat; color: #fff;}
+
+/* Form styles */
+  
+fieldset
+{
+width: auto; border: none;  margin-left: -10px;
+}
+
+label
+{
+float: left;
+text-align: right;
+display: block; width: 18%; margin-left: 0px;
+}
+
+.labelRt {
+float: right;
+text-align: left;
+display: inline; width: auto; margin-right: 500px; position: relative; margin-top: -37px;
+}
+*:first-child+html .labelRt { margin-top: -24px; margin-right: 480px;}
+
+
+
+input
+{
+color: #000000;
+background: #d4d4d4; margin-left: 4px;
+}
+
+textarea
+{
+color: #000000;
+background: #d4d4d4; height: 80px; width: 250px; margin-left: 4px;
+}
+
+input.submit
+{
+color: #fff;
+background: #828282; font-size: 10px; font-weight: bold; width: auto;
+}
+
+.submitAlign {margin-left: 150px; }
+
+.required {color: #990000; font-weight: bold; }
+
+ /* End form styles */
+.reg {
+    font-size:75%;
+    vertical-align:super; line-height:normal;
+}
+
+
+
+/* ~~ The footer ~~ */
+#footer {
+	padding: 5px 0px 5px 30px;
+	background: #828282; font-size:10px; color: #fff; float:left; width: 910px;
+}
+#footer .left {float: left;}
+#footer .mid {float: left; font-size:10px; font-weight:normal; margin-left: 240px;}
+#footer .right {float: right; margin-right: 25px;}
+#footer a, .footer a:link, #footer a:visited, #footer a:active {color: #fff; text-decoration:none; font-weight:bold; letter-spacing:1px;}
+#footer a:hover {text-decoration: underline;}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+#contentb .main {width: 100%; float:left; background: #fff; padding-bottom: 20px; min-height:547px;}
+#contentb .main .leftCol {float: left; width: 285px; margin-left: 40px; margin-top: 32px;}
+#contentb .main .leftCol img {float: left;}
+#contentb .main .rtCol {float: left; margin-top:66px;}
+#contentb .main .rtCol h2 {width: 609px; font-size: 14px; font-weight:bold; background: #828282; color: #fff; margin:0; padding: 3px;}
+#contentb .main .rtCol h2 a, #content .main .rtCol h2 a:link, #content .main .rtCol h2 a:visited, #content .main .rtCol h2 a:active {text-decoration: none; color:#fff; font-size: 14px; font-weight:bold;}
+#contentb .main .rtCol h2 a:hover {text-decoration: underline; color:#fff; font-size: 14px; font-weight:bold;}
+
+#contentb .main .fullCol {float: left; margin-top:10px;}
+#contentb .main h1.fullPg {margin-top: 10px; margin-left: 20px;
+	font-size: 24px; font-weight:bold; padding-top:10px; color: #656363;}
+#contentb .main .fullCol h2 {width: 910px; font-size: 14px; font-weight:bold; background: #828282; color: #fff; margin:0; padding: 3px 10px 3px 20px;}
+#contentb .main .fullCol hr {height: 1px; border:none; color: #828282; background-color: #828282;}
+
+#contentb .main .fullCol .lftSide {width: 400px; display: inline-block;}
+#contentb .main .fullCol .rtSide {float: right; width: 400px; }
+
+/* Safari Hacks*/ 
+@media screen and (-webkit-min-device-pixel-ratio:0){
+
+#navs li a.onreg {color: #dadada; margin-top: -2px; display:inline-block; background: none;}
+	#navs li a:hover.onreg
+	{background: url(../images/nav_arrow.gif) 0px 13px no-repeat; color: #fff;}
+	#navs li a.onreg2 {background: url(../images/nav_arrow.gif) 0px 13px no-repeat; color: #fff; margin-top: -2px; display:inline-block;}
+	#navs li a:hover .onreg2
+	{	background: url(../images/nav_arrow.gif) 0px 13px no-repeat; color: #fff;}		
+h1.upm {margin-top: -9px;}
+.scrollCont .map ul li.regFx {list-style-type: none; background:url(../images/sitemap_arrow2.gif) 0px 6px no-repeat; padding-left: 12px; padding-bottom: 5px; margin-top: -4px;}
+
+}
+
+/* IE7 hacks */
+
+*:first-child+html .scrollCont {margin-top: 10px;}
+*:first-child+html #content .main .rtCol {margin-top:69px;}
+*:first-child+html .scrollCont h1 {font-size: 14px; font-weight:bold; margin-left: 10px;}
+*:first-child+html #content .main .fullCol .lftSide {display: inline-block; float: left;}
+*:first-child+html .socialTop {margin-top: -35px;}
+
+/* IE8 Hacks */
+.scrollCont {margin-left: 10px\9;}

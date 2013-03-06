@@ -1,0 +1,219 @@
+/* GENERAL */
+
+.column {
+	float: left;
+}
+
+.last {
+	margin: 0;
+}
+
+/* HOMEPAGE WIDGET COLUMNS*/
+
+#homepage .one {
+	margin: 0 10px 10px 10px;
+}
+
+#homepage .one-half {
+	float: left;
+	margin: 0 10px 10px 10px;
+	width: 460px;
+}
+
+#homepage .one-fourth {
+	float: left;
+	margin: 0 10px 10px 10px;
+	width: 220px;
+}
+
+#homepage .three-fourth {
+	float: left;
+	margin: 0 10px 10px 10px;
+	width: 700px;
+}
+
+#homepage .one-third {
+	float: left;
+	margin: 0 10px 10px 10px;
+	width: 300px;
+}
+
+#homepage .two-third {
+	float: left;
+	margin: 0 10px 10px 10px;
+	width: 620px;
+}
+
+/* HOMEPAGE CONTENT AREA */
+
+#homepage #home-content {
+	margin: 0 0 20px 0;
+	padding: 0 20px;
+}
+
+#homepage #home-content .one-half {
+    float: left;
+    margin: 0 20px 10px 0;
+    width: 450px;
+}
+
+#homepage #home-content .one-fourth {
+    float: left;
+    margin: 0 20px 10px 0;
+    width: 215px;
+}
+
+#homepage #home-content .three-fourth {
+    float: left;
+    margin: 0 20px 10px 0;
+    width: 685px;
+}
+
+#homepage #home-content .one-third {
+    float: left;
+    margin: 0 20px 10px 0;
+    width: 293px;
+}
+
+#homepage #home-content .two-third {
+    float: left;
+    margin: 0 20px 10px 0;
+    width: 606px;
+}
+
+#homepage #home-content .last {
+    margin: 0;
+}
+
+/* FOOTER */
+
+#footer .one-half {
+	float: left;
+	margin: 0 10px;
+	width: 460px;
+}
+
+#footer .one-fourth {
+	float: left;
+	margin: 0 10px;
+	width: 220px;
+}
+
+#footer .three-fourth {
+	float: left;
+	margin: 0 10px;
+	width: 700px;
+}
+
+#footer .one-third {
+	float: left;
+	margin: 0 10px;
+	width: 300px;
+}
+
+#footer .two-third {
+	float: left;
+	margin: 0 10px;
+	width: 620px;
+}
+
+/* 2-COLUMN LAYOUT */
+
+#main #content {
+    float: left;
+    margin: 0 10px;
+	padding: 0 0 20px 0;
+    width: 600px;
+}
+
+#main #sidebar,
+#main #sidebar-left {
+    float: left;
+    margin: 0 10px 10px 10px;
+    min-height: 200px;
+    padding: 10px 0 20px 0;
+    width: 320px;
+}
+
+#main #sidebar .widget{
+	margin-left: 20px;
+}
+
+#main #sidebar-left .widget {
+	margin-right: 20px;
+}
+
+#content .one-half {
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 275px;
+}
+
+#content .one-fourth {
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 132px;
+}
+
+#content .three-fourth {
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 376px;
+}
+
+#content .one-third {
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 180px;
+}
+
+#content .two-third {
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 370px;
+}
+
+#content .last {
+    margin: 0;
+}
+
+/* 1-COLUMN LAYOUT */
+
+#main #full-width-content {
+    margin: 0;
+}
+
+#full-width-content .one-half {
+    float: left;
+    margin: 0 20px 10px 0;
+    width: 450px;
+}
+
+#full-width-content .one-fourth {
+    float: left;
+    margin: 0 20px 10px 0;
+    width: 215px;
+}
+
+#full-width-content .three-fourth {
+    float: left;
+    margin: 0 20px 10px 0;
+    width: 685px;
+}
+
+#full-width-content .one-third {
+    float: left;
+    margin: 0 20px 10px 0;
+    width: 293px;
+}
+
+#full-width-content .two-third {
+    float: left;
+    margin: 0 20px 10px 0;
+    width: 606px;
+}
+
+#full-width-content .last {
+    margin: 0;
+}
+

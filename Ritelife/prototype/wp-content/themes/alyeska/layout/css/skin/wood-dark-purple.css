@@ -1,0 +1,44 @@
+/* COLOR SHADES */
+
+/*
+
+BACKGROUND: #130323
+LIGHTER: #4d0f8b 
+LIGHTEST: #8000ff
+
+*/
+
+/* PRIMARY ELEMENTS */
+
+body {
+	background: #130323 url(../../images/skin/footer-dark-purple.png) 0 bottom repeat-x;
+}
+
+#wrapper {
+	background: #130323 url(../../images/skin/wood-dark-purple.jpg) center 0 no-repeat;
+}
+
+/* CLASSES */
+
+.highlight {
+	color: #4d0f8b;
+}
+
+/* TYPOGRAPHY */
+
+a,
+h2 a:hover,
+.nav-entries a:hover,
+#sidebar li a:hover {
+	color: #8000ff;
+}
+
+a:hover {
+	color: #130323;
+}
+
+/* COPYRIGHT */
+
+#copyright .menu a:hover {
+	color: #4d0f8b;
+}

@@ -1,0 +1,44 @@
+/* COLOR SHADES */
+
+/*
+
+BACKGROUND: #030b23
+LIGHTER: #165587 
+LIGHTEST: #377eff
+
+*/
+
+/* PRIMARY ELEMENTS */
+
+body {
+	background: #030b23 url(../../images/skin/footer-navy.png) 0 bottom repeat-x;
+}
+
+#wrapper {
+	background: #030b23 url(../../images/skin/glass-navy.jpg) center 0 no-repeat;
+}
+
+/* CLASSES */
+
+.highlight {
+	color: #165587;
+}
+
+/* TYPOGRAPHY */
+
+a,
+h2 a:hover,
+.nav-entries a:hover,
+#sidebar li a:hover {
+	color: #377eff;
+}
+
+a:hover {
+	color: #030b23;
+}
+
+/* COPYRIGHT */
+
+#copyright .menu a:hover {
+	color: #165587;
+}

@@ -1,0 +1,47 @@
+/*
+Theme Name: Alyeska
+Version: 1.1.3
+Theme URI: http://www.jasonbobich.com/
+Description: It's like an all-you-can-eat WordPress Buffet.
+Author: Jason Bobich
+Author URI: http://www.jasonbobich.com
+Tags: two columns, widgets, CMS, corporate, company
+
+Alyeska by Jason Bobich || http://www.jasonbobich.com
+*/
+
+/* CSS RESET */
+@import url('layout/css/core/reset.css');
+
+/* NAVIGATION */
+@import url('layout/css/core/nav.css');
+
+/* CORE */
+@import url('layout/css/core/core.css');
+
+/* PLUGINS */
+@import url('layout/css/core/plugins.css');
+
+/* GRID */
+@import url('layout/css/core/grid.css');
+
+/* TYPOGRAPHY & GENERAL CLASSES */
+@import url('layout/css/core/typography.css');
+
+/* WIDGETS */
+@import url('layout/css/core/widgets.css');
+
+/* SHORTCODES */
+@import url('layout/css/core/shortcodes.css');
+
+/* MENUS */
+@import url('layout/css/core/menus.css');
+
+/* PRETTY PHOTO */
+@import url('layout/plugins/prettyphoto/css/prettyPhoto.css');
+
+
+
+
+
+

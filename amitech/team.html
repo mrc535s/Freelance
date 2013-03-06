@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Amitech</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="splash.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="js/supersized.3.2.4.min.js"></script>
+		<script type="text/javascript" src="js/supersized.shutter.min.js"></script>
+		<script src="js/jquery.bxSlider.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+				jQuery(function($){
+					$.supersized({
+						// Functionality
+						slideshow               :   0,			// Slideshow on/off
+						autoplay				:	0,			// Slideshow starts playing automatically
+						start_slide             :   1,			// Start slide (0 is random)
+						stop_loop				:	0,			// Pauses slideshow on last slide
+						random					: 	0,			// Randomize slide order (Ignores start slide)
+						slide_interval          :   3000,		// Length between transitions
+						transition              :   0, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+						transition_speed		:	1000,		// Speed of transition
+						new_window				:	0,			// Image links open in new window/tab
+						pause_hover             :   0,			// Pause slideshow on hover
+						keyboard_nav            :   0,			// Keyboard navigation on/off
+						performance				:	3,			// 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
+						image_protect			:	1,			// Disables image dragging and right click with Javascript
+
+						// Size & Position						   
+						min_width		        :   0,			// Min width allowed (in pixels)
+						min_height		        :   220,		// Min height allowed (in pixels)
+						vertical_center         :   0,			// Vertically center background
+						horizontal_center       :   0,			// Horizontally center background
+						fit_always				:	0,			// Image will never exceed browser width or height (Ignores min. dimensions)
+						fit_portrait         	:   0,			// Portrait images will not exceed browser height
+						fit_landscape			:   0,			// Landscape images will not exceed browser width
+
+						// Components							
+						slide_links				:	false,	// Individual links for each slide (Options: false, 'number', 'name', 'blank')
+						thumb_links				:	0,			// Individual thumb links for each slide
+						thumbnail_navigation    :   0,			// Thumbnail navigation
+						slides 					:  	[			// Slideshow Images
+															{image : 'img/about_bkg.jpg', title : '', thumb : '', url : ''}
+													],
+
+						// Theme Options			   
+						progress_bar			:	0,			// Timer for each slide							
+						mouse_scrub				:	0
+					});
+			    });
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var subnav = $('#jb_subnav').bxSlider({
+				    captions: false,
+				    auto: false,
+				    controls: false
+				  });
+				
+			var animateTop = true;
+			
+			$('.open-close-toggle').click(function(){
+				$('#jb_toggle-section').slideDown();
+				if(animateTop == true){
+					$('#supersized').animate({
+					    top: '+=175px'
+					  }, 400);
+					animateTop = false;
+				}
+				var buttonText = $(this).html();
+			    if(buttonText == "FIRM"){
+					document.getElementById("firm").setAttribute("class", "open-close-toggle active");
+					document.getElementById("services").setAttribute("class", "open-close-toggle");
+					document.getElementById("industries").setAttribute("class", "open-close-toggle");
+					document.getElementById("clients").setAttribute("class", "open-close-toggle");
+					document.getElementById("careers").setAttribute("class", "open-close-toggle");
+					document.getElementById("resources").setAttribute("class", "open-close-toggle");
+			        subnav.goToSlide(0);
+				}else if(buttonText == "SERVICES"){
+					document.getElementById("firm").setAttribute("class", "open-close-toggle");
+					document.getElementById("services").setAttribute("class", "open-close-toggle active");
+					document.getElementById("industries").setAttribute("class", "open-close-toggle");
+					document.getElementById("clients").setAttribute("class", "open-close-toggle");
+					document.getElementById("careers").setAttribute("class", "open-close-toggle");
+					document.getElementById("resources").setAttribute("class", "open-close-toggle");
+			        subnav.goToSlide(1);
+				}else if(buttonText == "INDUSTRIES"){
+					document.getElementById("firm").setAttribute("class", "open-close-toggle");
+					document.getElementById("services").setAttribute("class", "open-close-toggle");
+					document.getElementById("industries").setAttribute("class", "open-close-toggle active");
+					document.getElementById("clients").setAttribute("class", "open-close-toggle");
+					document.getElementById("careers").setAttribute("class", "open-close-toggle");
+					document.getElementById("resources").setAttribute("class", "open-close-toggle");
+			        subnav.goToSlide(2);
+				}else if(buttonText == "CLIENTS"){
+					document.getElementById("firm").setAttribute("class", "open-close-toggle");
+					document.getElementById("services").setAttribute("class", "open-close-toggle");
+					document.getElementById("industries").setAttribute("class", "open-close-toggle");
+					document.getElementById("clients").setAttribute("class", "open-close-toggle active");
+					document.getElementById("careers").setAttribute("class", "open-close-toggle");
+					document.getElementById("resources").setAttribute("class", "open-close-toggle");
+			        subnav.goToSlide(3);
+				}else if(buttonText == "CAREERS"){
+					document.getElementById("firm").setAttribute("class", "open-close-toggle");
+					document.getElementById("services").setAttribute("class", "open-close-toggle");
+					document.getElementById("industries").setAttribute("class", "open-close-toggle");
+					document.getElementById("clients").setAttribute("class", "open-close-toggle");
+					document.getElementById("careers").setAttribute("class", "open-close-toggle active");
+					document.getElementById("resources").setAttribute("class", "open-close-toggle");
+			        subnav.goToSlide(4);
+				}else if(buttonText == "RESOURCES"){
+					document.getElementById("firm").setAttribute("class", "open-close-toggle");
+					document.getElementById("services").setAttribute("class", "open-close-toggle");
+					document.getElementById("industries").setAttribute("class", "open-close-toggle");
+					document.getElementById("clients").setAttribute("class", "open-close-toggle");
+					document.getElementById("careers").setAttribute("class", "open-close-toggle");
+					document.getElementById("resources").setAttribute("class", "open-close-toggle active");
+			        subnav.goToSlide(5);
+				}
+			    });
+			$('#jb_close-toggle').click(function(){
+				$('#jb_toggle-section').slideUp();
+				document.getElementById("firm").setAttribute("class", "open-close-toggle");
+				document.getElementById("services").setAttribute("class", "open-close-toggle");
+				document.getElementById("industries").setAttribute("class", "open-close-toggle");
+				document.getElementById("clients").setAttribute("class", "open-close-toggle");
+				document.getElementById("careers").setAttribute("class", "open-close-toggle");
+				document.getElementById("resources").setAttribute("class", "open-close-toggle");
+				if(animateTop == false){
+					$('#supersized').animate({
+					    top: '-=175px'
+					  }, 400);
+					animateTop = true;
+				}
+			});	
+			$('#home').click(function(){
+				$('#jb_toggle-section').slideUp();
+				document.getElementById("firm").setAttribute("class", "open-close-toggle");
+				document.getElementById("services").setAttribute("class", "open-close-toggle");
+				document.getElementById("industries").setAttribute("class", "open-close-toggle");
+				document.getElementById("clients").setAttribute("class", "open-close-toggle");
+				document.getElementById("careers").setAttribute("class", "open-close-toggle");
+				document.getElementById("resources").setAttribute("class", "open-close-toggle");
+				if(animateTop == false){
+					$('#supersized').animate({
+					    top: '-=175px'
+					  }, 400);
+					animateTop = true;
+				}
+			});
+			$('#blog').click(function(){
+				$('#jb_toggle-section').slideUp();
+				document.getElementById("firm").setAttribute("class", "open-close-toggle");
+				document.getElementById("services").setAttribute("class", "open-close-toggle");
+				document.getElementById("industries").setAttribute("class", "open-close-toggle");
+				document.getElementById("clients").setAttribute("class", "open-close-toggle");
+				document.getElementById("careers").setAttribute("class", "open-close-toggle");
+				document.getElementById("resources").setAttribute("class", "open-close-toggle");
+				if(animateTop == false){
+					$('#supersized').animate({
+					    top: '-=175px'
+					  }, 400);
+					animateTop = true;
+				}
+			});
+		});
+		</script>
+	</head>
+<body>
+	<div id="jb_header_container">
+		<div id="jb_header">
+			<div class="jb_logo"><a href="index.html"><img src="img/logo.png"></a></div>
+			<div id="jb_partners"><a href="#"><img src="img/twitter.png"></a><a href="#"><img src="img/linkedin.png"></a><a href="#"><img src="img/facebook.png"></a></div>
+			<div id="jb_nav_container">
+				<div id="jb_headermenu">
+					<ul class="jb_nav">
+						<li><a class="open-close-toggle" id="firm">FIRM</a></li>
+						<li><a class="open-close-toggle" id="services">SERVICES</a></li>
+						<li><a class="open-close-toggle" id="industries">INDUSTRIES</a></li>
+						<li><a class="open-close-toggle" id="clients">CLIENTS</a></li>
+						<li><a class="open-close-toggle" id="careers">CAREERS</a></li>
+						<li><a class="open-close-toggle" id="resources">RESOURCES</a></li>
+						<li><a class="open-close-toggle" id="blog">BLOG</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="jb_toggle-section_container">
+	    	<div id="jb_toggle-section">
+				<div id="jb_subnav_container">
+				<div id="jb_subnav">
+					<div class="jb_subnav_section"><ul>
+							<li><a href="about.html">About</a>
+								<ul>
+									<li><a href="mission.html">Mission &amp; Values</a></li>
+									<li><a href="letter.html">Letter from President</a></li>
+								</ul>
+							</li>
+													<li><a href="team.html">Leadership Team</a>
+                             <ul>
+                            <li><a href="team.html">Bios</a></li>
+                            </ul>
+                            </li>
+							<li><a href="affiliates.html">Affiliates</a>
+								<ul>
+									<li><a href="http://www.potentiamed.com" target="_blank">PotentiaMed</a></li>
+									<li><a href="http://www.fidelityadvisory.com" target="_blank">FAN</a></li>
+									<li><a href="http://www.gabrielmanagement.com" target="_blank">TGMG</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+			  		<div class="jb_subnav_section">
+						<ul>
+							<li><a href="#">Performance Optimization</a>
+								<ul>
+									<li><a href="#">Roadmap Strategy</a></li>
+									<li><a href="#">Performance Management</a></li>
+									<li><a href="#">Planning</a></li>
+									<li><a href="#">Analytics &amp; Predictive Modeling</a></li>
+									<li><a href="#">Business Intelligence</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Information Management</a>
+								<ul>
+									<li><a href="#">Data Governance</a></li>
+									<li><a href="#">Data Quality</a></li>
+									<li><a href="#">Data Integration</a></li>
+									<li><a href="#">Data Warehouse</a></li>
+									<li><a href="#">Master Data Management</a></li>
+									<li><a href="#">Portals &amp; Content Management</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Consulting</a>
+								<ul>
+									<li><a href="#">Project Delivery</a></li>
+									<li><a href="#">Talent Engagement</a></li>
+									<li><a href="#">Litigation Support</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Enterprise Solutions</a>
+								<ul>
+									<li><a href="#">Custom Application Development</a></li>
+									<li><a href="#">Java/J2EE</a></li>
+									<li><a href="#">Microsoft</a></li>
+									<li><a href="#">Enterprise Web 2.0</a></li>
+									<li><a href="#">Systems Integration</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Outsourcing</a></li>
+						</ul>
+			  		</div>
+			  		<div class="jb_subnav_section">
+						<ul>
+							<li><a href="#">Insurance</a></li>
+							<li><a href="#">Healthcare &amp; Life Sciences</a>
+								<ul>
+									<li><a href="#">Payers</a></li>
+									<li><a href="#">Providers</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Financial Services</a></li>
+							<li><a href="#">Other Industries</a></li>
+						</ul>
+					</div>
+			  		<div class="jb_subnav_section">
+			  			<ul>
+							<li><a href="#">Representative Clients</a></li>
+							<li><a href="#">Prospective Clients</a></li>
+							<li><a href="#">Testimonials</a></li>
+						</ul>
+			  		</div>
+					<div class="jb_subnav_section">
+						<ul>
+							<li><a href="#">Current Opportunities</a></li>
+							<li><a href="#">Refer a Friend</a></li>
+						</ul>
+					</div>
+					<div class="jb_subnav_section">
+						<ul>
+							<li><a href="#">Downloads</a></li>
+							<li><a href="#">News &amp; Events</a></li>
+							<li><a href="#">Videos</a></li>
+							<li><a href="#">IBM</a></li>
+							<li><a href="#">Microsoft</a></li>
+							<li><a href="#">Oracle</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="jb_close-toggle"><img src="img/up_arrow.png"></div>
+			</div>
+		</div>
+	</div>
+    <!--Start Main Content-->
+    
+    <div id="jbMain">
+    <div class="innerCont">
+    <div id="jb_headline_container">
+    <span class="jb_headline_content">Leadership Team</span>
+    <div class="mainRule"></div>
+    </div>
+	<div id="jb_content">
+    <div class="topTxt">
+      <p>The Amitech Solutions team consists of experienced advisors with specialties across a wide range of industries, technologies and practice areas. We provide an integrated advisory approach drawing upon our strengths to deliver strategic and tactical advice, global reach, critical industry knowledge, and operational expertise. We have the ability to draw upon a vast network of diverse professional resources to create collaborative, multidisciplinary teams to provide targeted solutions for our clients. The combination of industry and consulting experience with a case-specific, team approach distinguishes Amitech Solutions from other firms. Each project receives active involvement from senior-level consultants with experience in the industries relevant to our clients' requirements.</p>
+    </div>
+    <div class="leaderBox">
+    <div class="leftBox"><h1>President<br />
+      Principal Consultant</h1>
+    </div>
+    <div class="rtBox">
+      <h2>Amit Bhaghat</h2>
+      <p>Amit Bhagat is the Founder, President and Principal Consultant of Amitech Solutions. Amit's principal responsibilities include developing and deploying information management, business intelligence and performance management strategies and solutions. Amit is a well-respected industry thought leader and frequent speaker and has authored several white papers on Master Data Management, Data Governance, and Business Intelligence. Amit's experience over the past 19 years includes design and delivery of complex and innovative information-based business solutions in the healthcare, insurance, and financial services industries to help clients improve decision-making and achieve the next level of performance. Prior to founding Amitech Solutions, Amit worked extensively with clients in healthcare and financial services organizations to develop and implement growth strategies as well as gain measurable improvement in their operational performance using IT-enabled business initiatives.</p>
+      <div><a href="amit_bio.html">read more &raquo;</a></div>
+    </div>
+    <div class="dottedRule"></div>
+    </div>
+    <div class="leaderBox">
+    <div class="leftBox"><h1>Managing Director</h1>
+    </div>
+    <div class="rtBox">
+      <h2>Robert Palmer</h2>
+      <p>Robert Palmer is a Managing Director of Amitech Solutions. Robert brings experience in business valuation in the medical, technology, service and financial sectors and in excess of 20 years of operational experience in managing privately-held finance, service and consulting firms. His areas of expertise are financial analysis and valuation including risk-assessment, with a focus on financial and predictive modeling.</p>
+      <div><a href="robertp_bio.html">read more &raquo;</a></div>
+    </div>
+    <div class="dottedRule"></div>
+    </div>
+    <div class="leaderBox">
+    <div class="leftBox"><h1>Managing Director</h1>
+    </div>
+    <div class="rtBox">
+      <h2>Naresh Sampat</h2>
+      <p>Naresh Sampat is a Managing Director of Amitech Solutions. Naresh has 25 years of experience in healthcare, information technology and telecommunications. He has expertise in enterprise performance management, security systems and pperations technology. Naresh has had notable success in executing many key projects, developing and managing applications with strict SLA's and a track record of identifying process improvement opportunities and implementing sustainable solutions to substantially reduce operating expenses and boost client satisfaction and corporate productivity.</p>
+      <div><a href="naresh_bio.html">read more &raquo;</a></div>
+    </div>
+    <div class="dottedRule"></div>
+    </div>
+    <div class="leaderBox">
+    <div class="leftBox"><h1>General Counsel<br />
+      Managing Consultant    </h1>
+    </div>
+    <div class="rtBox">
+      <h2>Michael Demos</h2>
+      <p>Michael Demos is General Counsel and Managing Consultant for Amitech Solutions. Michael is responsible for overall operations, firm management, financial modeling and performance metrics, strategic initiatives, and professional recruitment. He also advises Amitech on various issues involving negotiations, contracts, intellectual property, business plans, business proposals, and strategic consulting. In addition to these roles, Michael serves as a business analyst and strategic and management consultant for various clients of Amitech Solutions in the healthcare consulting and finance industries.</p>
+<div><a href="mdemos_bio.html">read more &raquo;</a></div>
+    </div>
+    <div class="dottedRule"></div>
+    </div>
+    <div class="leaderBox">
+    <div class="leftBox"><h1>Director of Business Development</h1>
+    </div>
+    <div class="rtBox">
+      <h2>Martin Davies</h2>
+      <p>Martin Davies is the Director of Business Development for Amitech Solutions. Martin is responsible for the development of strategic partnerships and client relationships. He brings a broad range of experience and skills in the creation and development of corporate strategy and tactical/operational execution across various industrial sectors. His background and tactical skills include B2B &amp; B2C CRM, Business Intelligence - Data Warehouses, sales, marketing, applications development &amp; deployment (LOB and mobile) in international travel, retail, call and distribution center operations, sales channels creation and management, and market forecasting and research.</p>
+<div><a href="mdavies_bio.html">read more &raquo;</a></div>
+    </div>
+    <div class="dottedRule"></div>
+    </div>
+    <div class="leaderBox">
+    <div class="leftBox">
+      <h1>Director of Marketing
+    </h1></div><div class="rtBox">
+      <h2>Shannon Palmer</h2>
+      <p>Shannon Palmer is the Director of Marketing for Amitech Solutions. Shannon is responsible for the firm's marketing, advertising, and public relations, and she is also involved in corporate strategy and development initiatives. Shannon has 16 years of professional experience in marketing and advertising. She served as the Director of Marketing for PotentiaMED and the Director of Marketing for Fidelity Advisory Network. She was the Senior Copywriter for Freestyle Interactive Advertising, an award-winning advertising agency in San Francisco, where she worked on accounts including Oracle, CBS MarketWatch, XO Communications, Sega Corporation, and others.</p>
+<div><a href="spalmer_bio.html">read more &raquo;</a></div>
+    </div>
+    <div class="dottedRule"></div>
+    </div>
+    
+    <div class="spcr"></div>
+	</div>
+    
+    </div></div>
+    <div style="background:url(img/shadow.png) top left repeat-x; width: 100%; height: 45px; margin-top: 455px;"></div>
+    
+	<div id="jb_bottom_nav_container">
+		<div id="jb_bottom_nav">
+			<ul>
+				<li><a href="#">Performance Optimization</a>
+					<ul>
+						<li><a href="#">Performance Management</a></li>
+						<li><a href="#">Planning</a></li>
+						<li><a href="#">Analytics &amp; Predictive Modeling</a></li>
+						<li><a href="#">Business Intelligence</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Information Management</a>
+					<ul>
+						<li><a href="#">Data Governance</a></li>
+						<li><a href="#">Data Quality</a></li>
+						<li><a href="#">Data Integration</a></li>
+						<li><a href="#">Data Warehouse</a></li>
+						<li><a href="#">Master Data Management</a></li>
+						<li><a href="#">Portals and Content Management</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Consulting</a>
+					<ul>
+						<li><a href="#">Performance Optimization</a></li>
+						<li><a href="#">Project Delivery</a></li>
+						<li><a href="#">Talent Engagement</a></li>
+						<li><a href="#">Enterprise Solutions</a></li>
+						<li><a href="#">Custom Application Development</a></li>
+						<li><a href="#">Java/J2EE</a></li>
+						<li><a href="#">Microsoft</a></li>
+						<li><a href="#">Enterprise Web 2.0</a></li>
+						<li><a href="#">Systems Integration</a></li>
+						<li><a href="#">Outsourcing</a></li>
+					</ul>
+				</li>
+				<li><a href="#">News &amp; Events</a>
+					<ul>
+						<li class="jb_event"><a href="#">September 06, 2011<br />Join Amitech Solutions at the TWDI<br/ >Meeting on September 16 &gt;</a></li>
+						<li class="jb_event"><a href="#">June 23, 2011<br />Amitech Solutions to host webinar,<br/ >"Data Governance for IT and Business<br />Leaders", on July 14 &gt;</a></li>
+						<li class="jb_event"><a href="#">May 19, 2011<br />Join Amitech Solutions at the TWDI<br/ >Meeting on June 3 &gt;</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="jb_footer">
+		<div id="jb_footer_box">
+			<div class="jb_copy">1999 - 2012 Amitech Solutions Inc. - St. Louis Leader in BI</div>
+			<div class="jb_footer_nav">
+				<ul>
+					<li><a href="#">Privacy &amp; Legal Disclaimer |</a></li>
+					<li><a href="#">Contact Us |</a></li>
+					<li><a href="#">Site Map</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>	</div>
+</body>
+</html>

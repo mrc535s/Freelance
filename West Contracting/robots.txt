@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+Disallow: /people.html
+Disallow: /newsletter0609.html
+Disallow: /newsletter0309.html
+Disallow: /testimonials.html
+Disallow: /pdf/nb_west_%EE%80%80ma06%EE%80%81.pdf
+
+Disallow: /asphalt
+Disallow: /news_archive.html
+Disallow: /newsletter0409.html
+Disallow: /newsletter0509.html
+Disallow: /mapa.html
+Disallow: /asphalt_pg.html
+
+
+
+Sitemap: http://www.nbwest.com/sitemap.xml

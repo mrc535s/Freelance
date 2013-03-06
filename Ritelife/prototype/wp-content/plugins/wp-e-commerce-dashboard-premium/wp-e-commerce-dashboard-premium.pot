@@ -1,0 +1,471 @@
+# Copyright (C) 2010 
+# This file is distributed under the same license as the  package.
+msgid ""
+msgstr ""
+"Project-Id-Version:  \n"
+"Report-Msgid-Bugs-To: http://plugins.leewillis.co.uk/\n"
+"POT-Creation-Date: 2011-07-20 06:46:01+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: items_to_ship.php:31
+msgid "ID"
+msgstr ""
+
+#: items_to_ship.php:31 wp-e-commerce-csv-fields-3.8.php:47
+#: wp-e-commerce-csv-fields-3.7.php:52
+msgid "Order Date"
+msgstr ""
+
+#: items_to_ship.php:31
+msgid "Items"
+msgstr ""
+
+#: items_to_ship.php:31
+msgid "Status"
+msgstr ""
+
+#: wp-e-commerce-sales-export.php:21 wp-e-commerce-sales-export.php:24
+#: wp-e-commerce-sales-export.php:296 wp-e-commerce-sales-export.php:386
+msgid "Sales Export"
+msgstr ""
+
+#: wp-e-commerce-sales-export.php:22 wp-e-commerce-sales-export.php:25
+#: wp-e-commerce-sales-schedule.php:75
+msgid "Scheduled Sales Export"
+msgstr ""
+
+#: wp-e-commerce-sales-export.php:56
+msgid "Purchase Orders"
+msgstr ""
+
+#: wp-e-commerce-sales-export.php:58
+msgid "Purchase Order Lines"
+msgstr ""
+
+#: wp-e-commerce-sales-export.php:167
+msgid "Since last download"
+msgstr ""
+
+#: wp-e-commerce-sales-export.php:263
+msgid "All Products"
+msgstr ""
+
+#: wp-e-commerce-sales-export.php:274
+msgid "All Variations"
+msgstr ""
+
+#: wp-e-commerce-sales-export.php:301
+msgid "Date Range:"
+msgstr ""
+
+#: wp-e-commerce-sales-export.php:303
+msgid "All"
+msgstr ""
+
+#: wp-e-commerce-sales-export.php:304 product_sales.php:173
+msgid "Today"
+msgstr ""
+
+#: wp-e-commerce-sales-export.php:307 wp-e-commerce-sales-schedule.php:173
+msgid "Download:"
+msgstr ""
+
+#: wp-e-commerce-sales-export.php:309 wp-e-commerce-sales-schedule.php:175
+msgid "Orders"
+msgstr ""
+
+#: wp-e-commerce-sales-export.php:310 wp-e-commerce-sales-schedule.php:176
+msgid "Order Lines"
+msgstr ""
+
+#: wp-e-commerce-sales-export.php:314
+msgid "Products:"
+msgstr ""
+
+#: wp-e-commerce-sales-export.php:318 wp-e-commerce-sales-schedule.php:179
+msgid "Order Statuses:"
+msgstr ""
+
+#: wp-e-commerce-sales-export.php:322
+msgid "Configure Fields"
+msgstr ""
+
+#: wp-e-commerce-sales-export.php:322
+msgid "Schedule Export"
+msgstr ""
+
+#: wp-e-commerce-sales-export.php:360
+msgid "You cannot edit the options."
+msgstr ""
+
+#: wp-e-commerce-sales-export.php:367
+msgid "Settings updated."
+msgstr ""
+
+#: wp-e-commerce-sales-export.php:388
+msgid "Choose which fields are included in Purchase Log exports"
+msgstr ""
+
+#: wp-e-commerce-sales-export.php:407
+msgid "Order Export Fields"
+msgstr ""
+
+#: wp-e-commerce-sales-export.php:409
+msgid "Order Line Export Fields"
+msgstr ""
+
+#: wp-e-commerce-sales-export.php:415
+msgid "Save Settings"
+msgstr ""
+
+#: product_sales.php:114 stock_alerts.php:54
+msgid "Product"
+msgstr ""
+
+#: product_sales.php:114
+msgid "Units"
+msgstr ""
+
+#: product_sales.php:114 revenue_graph.php:125
+msgid "Revenue"
+msgstr ""
+
+#: product_sales.php:117
+msgid "No Sales In The Selected Period"
+msgstr ""
+
+#: product_sales.php:145
+msgid "Total"
+msgstr ""
+
+#: product_sales.php:174
+msgid "Last 7 Days"
+msgstr ""
+
+#: product_sales.php:175
+msgid "This Month"
+msgstr ""
+
+#: product_sales.php:176
+msgid "Last Month"
+msgstr ""
+
+#: product_sales.php:177
+msgid "This Year"
+msgstr ""
+
+#: product_sales.php:178
+msgid "All Time"
+msgstr ""
+
+#: product_sales.php:179
+msgid "Custom"
+msgstr ""
+
+#: product_sales.php:248
+msgid "Maximum number of products to show"
+msgstr ""
+
+#: wp-e-commerce-sales-schedule.php:44
+msgid "WARNING"
+msgstr ""
+
+#: wp-e-commerce-sales-schedule.php:44
+msgid ""
+"Your download folder does not appear to be protected, and your downloads may "
+"be available to site visitors, and search engines."
+msgstr ""
+
+#: wp-e-commerce-sales-schedule.php:44
+msgid "(Fix)"
+msgstr ""
+
+#: wp-e-commerce-sales-schedule.php:79
+msgid "Next export: "
+msgstr ""
+
+#: wp-e-commerce-sales-schedule.php:86
+msgid "Schedule report and "
+msgstr ""
+
+#: wp-e-commerce-sales-schedule.php:88
+msgid "Email to ..."
+msgstr ""
+
+#: wp-e-commerce-sales-schedule.php:89
+msgid "Save to file"
+msgstr ""
+
+#: wp-e-commerce-sales-schedule.php:93
+msgid "Warning: "
+msgstr ""
+
+#: wp-e-commerce-sales-schedule.php:97
+msgid "Your file will be stored here: "
+msgstr ""
+
+#: wp-e-commerce-sales-schedule.php:107
+msgid ""
+"We're sorry - we're unable to create a secure download location for your "
+"exports."
+msgstr ""
+
+#: wp-e-commerce-sales-schedule.php:116
+msgid "Report runs"
+msgstr ""
+
+#: wp-e-commerce-sales-schedule.php:118
+msgid "Hourly"
+msgstr ""
+
+#: wp-e-commerce-sales-schedule.php:119
+msgid "Daily"
+msgstr ""
+
+#: wp-e-commerce-sales-schedule.php:120
+msgid "Weekly"
+msgstr ""
+
+#: wp-e-commerce-sales-schedule.php:184
+msgid "Schedule export"
+msgstr ""
+
+#: wp-e-commerce-sales-schedule.php:185
+msgid ""
+"<strong>Note:</strong> The export is run via WordPress cron, and will run "
+"\"close\" to the time specified, but not necessarily at the exact minute. "
+"The export will pick up all results since it was last run. "
+msgstr ""
+
+#: sales_graph.php:127
+msgid "Completed sales"
+msgstr ""
+
+#: sales_graph.php:127
+msgid "Pending sales"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:43 wp-e-commerce-csv-fields-3.7.php:49
+msgid "Order ID"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:51 wp-e-commerce-csv-fields-3.7.php:55
+msgid "Order Time"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:55 wp-e-commerce-csv-fields-3.7.php:58
+msgid "Total Order Tax"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:59 wp-e-commerce-csv-fields-3.7.php:61
+msgid "Total Order Value"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:63 wp-e-commerce-csv-fields-3.7.php:64
+msgid "Discount Code"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:67 wp-e-commerce-csv-fields-3.7.php:67
+msgid "Discount Amount"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:71 wp-e-commerce-csv-fields-3.7.php:70
+msgid "Order Status"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:75 wp-e-commerce-csv-fields-3.7.php:73
+msgid "Total Items"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:79 wp-e-commerce-csv-fields-3.7.php:76
+msgid "First Name"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:83 wp-e-commerce-csv-fields-3.7.php:79
+msgid "Surname"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:87 wp-e-commerce-csv-fields-3.7.php:82
+msgid "User ID"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:91 wp-e-commerce-csv-fields-3.7.php:85
+msgid "Address"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:95 wp-e-commerce-csv-fields-3.7.php:88
+msgid "City"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:99 wp-e-commerce-csv-fields-3.7.php:91
+msgid "State"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:103 wp-e-commerce-csv-fields-3.7.php:94
+msgid "Country"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:107 wp-e-commerce-csv-fields-3.7.php:97
+msgid "Postcode"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:111 wp-e-commerce-csv-fields-3.7.php:100
+msgid "Email"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:115 wp-e-commerce-csv-fields-3.7.php:103
+msgid "Phone"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:119 wp-e-commerce-csv-fields-3.7.php:106
+msgid "Shipping First Name"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:123 wp-e-commerce-csv-fields-3.7.php:109
+msgid "Shipping Surname"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:127 wp-e-commerce-csv-fields-3.7.php:112
+msgid "Shipping Address"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:131 wp-e-commerce-csv-fields-3.7.php:115
+msgid "Shipping City"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:135 wp-e-commerce-csv-fields-3.7.php:118
+msgid "Shipping State"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:139 wp-e-commerce-csv-fields-3.7.php:121
+msgid "Shipping Country"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:143 wp-e-commerce-csv-fields-3.7.php:124
+msgid "Shipping Postcode"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:147 wp-e-commerce-csv-fields-3.7.php:127
+msgid "Shipping Module"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:151 wp-e-commerce-csv-fields-3.7.php:130
+msgid "Chosen Shipping Rate"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:155 wp-e-commerce-csv-fields-3.7.php:133
+msgid "Shipping Rate Amount"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:159 wp-e-commerce-csv-fields-3.7.php:136
+msgid "Per Item Shipping"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:163 wp-e-commerce-csv-fields-3.7.php:139
+msgid "Product SKU"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:167 wp-e-commerce-csv-fields-3.7.php:142
+msgid "Product Description"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:171 wp-e-commerce-csv-fields-3.7.php:148
+msgid "Unit Price"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:174 wp-e-commerce-csv-fields-3.7.php:145
+msgid "Unit Tax"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:178 wp-e-commerce-csv-fields-3.7.php:151
+msgid "Item Qty"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:182 wp-e-commerce-csv-fields-3.7.php:154
+msgid "Item Line Price"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:186 wp-e-commerce-csv-fields-3.7.php:157
+msgid "Total Line Tax"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:190 wp-e-commerce-csv-fields-3.7.php:160
+msgid "Total Line Value"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:194 wp-e-commerce-csv-fields-3.7.php:163
+msgid "Personalisation Info"
+msgstr ""
+
+#: wp-e-commerce-csv-fields-3.8.php:198 wp-e-commerce-csv-fields-3.7.php:166
+msgid "Product Categories"
+msgstr ""
+
+#: recent_product_ratings.php:42
+msgid "Date"
+msgstr ""
+
+#: recent_product_ratings.php:42
+msgid "IP Address"
+msgstr ""
+
+#: recent_product_ratings.php:42
+msgid "Item"
+msgstr ""
+
+#: recent_product_ratings.php:42
+msgid "Rating"
+msgstr ""
+
+#: recent_product_ratings.php:45
+msgid "No Ratings Yet"
+msgstr ""
+
+#: wp-e-commerce-csv.php:521
+msgid "Scheduled Export"
+msgstr ""
+
+#: wp-e-commerce-csv.php:522
+msgid "Your scheduled export is attached"
+msgstr ""
+
+#: revenue_graph.php:125
+msgid "Pending Revenue"
+msgstr ""
+
+#: wp-e-commerce-widgets.php:102
+msgid "Maximum number of orders to show:"
+msgstr ""
+
+#: wp-e-commerce-widgets.php:139
+msgid "Medium Stock Level (Amber):"
+msgstr ""
+
+#: wp-e-commerce-widgets.php:140
+msgid "Low Stock Level (Red):"
+msgstr ""
+
+#: wp-e-commerce-widgets.php:179
+msgid "Maximum number of items to show:"
+msgstr ""
+
+#: wp-e-commerce-widgets.php:218
+msgid "Maximum number of ratings to show:"
+msgstr ""
+
+#: stock_alerts.php:54
+msgid "Current Stock"
+msgstr ""
+
+#: stock_alerts.php:57
+msgid "No Low Stock Items"
+msgstr ""
+
+#: support-functions.php:86
+msgid "No Results"
+msgstr ""

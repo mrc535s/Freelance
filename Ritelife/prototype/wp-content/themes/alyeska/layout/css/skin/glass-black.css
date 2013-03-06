@@ -1,0 +1,44 @@
+/* COLOR SHADES */
+
+/*
+
+BACKGROUND: #000000
+LIGHTER: #c31a1a 
+LIGHTEST: #ff0000
+
+*/
+
+/* PRIMARY ELEMENTS */
+
+body {
+	background: #000000 url(../../images/skin/footer-black.png) 0 bottom repeat-x;
+}
+
+#wrapper {
+	background: #000000 url(../../images/skin/glass-black.jpg) center 0 no-repeat;
+}
+
+/* CLASSES */
+
+.highlight {
+	color: #c31a1a;
+}
+
+/* TYPOGRAPHY */
+
+a,
+h2 a:hover,
+.nav-entries a:hover,
+#sidebar li a:hover {
+	color: #ff0000;
+}
+
+a:hover {
+	color: #c31a1a;
+}
+
+/* COPYRIGHT */
+
+#copyright .menu a:hover {
+	color: #c31a1a;
+}

@@ -1,0 +1,49 @@
+#wrapper {
+	background-color: transparent;
+	*background-color: none; /* IE7 Fix */
+	padding: 0 0 20px 0;
+}
+
+#main-wrapper {
+	margin: 0 auto;
+	width: 1000px;
+}
+
+#main-top {
+	background: url(../../images/shape/main-top-boxed-light.png) no-repeat;
+	height: 60px;
+}
+
+#main {
+	background: url(../../images/shape/main-boxed-light.png) repeat-y;
+	padding: 5px 0;
+}
+
+#main-inner {
+	padding: 0 20px;
+}
+
+#main-bottom {
+	background: url(../../images/shape/main-bottom-boxed-light.png) no-repeat;
+	height: 24px;
+}
+
+/* MAIN MENU */
+
+#main-menu .flip-black,
+#main-menu .flip-blue,
+#main-menu .flip-brown,
+#main-menu .flip-dark-purple,
+#main-menu .flip-dark,
+#main-menu .flip-green,
+#main-menu .flip-light-blue,
+#main-menu .flip-light,
+#main-menu .flip-navy,
+#main-menu .flip-orange,
+#main-menu .flip-pink,
+#main-menu .flip-purple,
+#main-menu .flip-red,
+#main-menu .flip-slate,
+#main-menu .flip-teal {
+    top: 2px;
+}

@@ -1,0 +1,44 @@
+/* COLOR SHADES */
+
+/*
+
+BACKGROUND: #510a0a
+LIGHTER: #c31a1a 
+LIGHTEST: #ff0000
+
+*/
+
+/* PRIMARY ELEMENTS */
+
+body {
+	background: #510a0a url(../../images/skin/footer-red.png) 0 bottom repeat-x;
+}
+
+#wrapper {
+	background: #510a0a url(../../images/skin/diag-red.jpg) center 0 no-repeat;
+}
+
+/* CLASSES */
+
+.highlight {
+	color: #c31a1a;
+}
+
+/* TYPOGRAPHY */
+
+a,
+h2 a:hover,
+.nav-entries a:hover,
+#sidebar li a:hover {
+	color: #ff0000;
+}
+
+a:hover {
+	color: #c31a1a;
+}
+
+/* COPYRIGHT */
+
+#copyright .menu a:hover {
+	color: #c31a1a;
+}

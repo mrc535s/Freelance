@@ -1,0 +1,22 @@
+.ssw_image_element{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: none;
+	padding: 0;
+	margin: 0;
+}
+.ssw_arrow{
+	height:24px;
+	width:24px;
+	z-index:100;
+	vertical-align:middle;
+	cursor:pointer;
+	display:none;
+}
+.ssw_left_arrow{
+	background: transparent url('arr-l.png') center left no-repeat;
+}
+.ssw_right_arrow{
+	background: transparent url('arr-r.png') center right no-repeat;
+}

@@ -1,0 +1,42 @@
+BEGIN:VCARD
+VERSION:2.1
+N:Palmer;Shannon
+FN:Shannon Palmer
+ORG:Amitech Solutions
+TITLE:Director of Marketing
+TEL;WORK;VOICE:512-366-3233
+TEL;WORK;FAX:314-248-0100
+ADR;WORK:;;507B Upson Street;Austin;TX;78703;United States of America
+LABEL;WORK;ENCODING=QUOTED-PRINTABLE:507B Upson Street=0D=0A=
+Austin, TX  78703
+ADR;HOME;PREF:;;507B Upson Street;Austin;TX;78703;United States of America
+LABEL;HOME;PREF;ENCODING=QUOTED-PRINTABLE:507B Upson Street=0D=0A=
+Austin, TX  78703
+X-MS-OL-DEFAULT-POSTAL-ADDRESS:1
+URL;WORK:www.amitechsolutions.com
+EMAIL;PREF;INTERNET:Shannon.Palmer@amitechsolutions.com
+X-MS-CARDPICTURE;TYPE=JPEG;ENCODING=BASE64:
+ /9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAcFBQYFBAcGBQYIBwcIChELCgkJChUPEAwRGBUa
+ GRgVGBcbHichGx0lHRcYIi4iJSgpKywrGiAvMy8qMicqKyr/2wBDAQcICAoJChQLCxQqHBgc
+ KioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKir/wAAR
+ CACUACcDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAA
+ AgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkK
+ FhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWG
+ h4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl
+ 5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREA
+ AgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYk
+ NOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
+ hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk
+ 5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD393CkA9TQCMEk8VC53OcfQUjHsDwKAHvO
+ P4Ofc0sYyMnr61ABk1YHypz6ZoAhf55celFJEMuWooAcOMn0pKU/d+tJQARjLVLMdsZHrxTY
+ RzSTHkLQAiHZHnvRSScIq0UAK3Xiko7UDr9KAJ4x8uagPzTfjVg/JH9BVeLliaAElOXx6UU1
+ 2yxPvRQA/tToxyKb2qWIfyxQATNhAPWo1+WMn1pZjl8egoKkqFXk8ZoAgoqYRovLnn0ooABy
+ cVKhwvHJPNIGjPRefpSuSqEjigBvljdl+SewpryEcKNtJHksSeSBTXILmgBqjc3zGikxk4FF
+ AFiMfMPzpZj0H40sa/KT+FMdl3njJHHPQUAEYIXPvUeFX7xyfQVI5Pl4OBwBxUVAAXPRflHt
+ RTKKALx4TJ7VXA3MPep5TiM+9Qp1J9BQASHgD1yajp0n38enFNoAZRRRQBZmPIHpSR8Lz3NI
+ 5yxpx4T6D+dAEJOTmig9aKAGUUUUAWQ+4gEdaVipHPemJ1J9BSP1A9BQAbFPT9DSGP3/ADFN
+ PWgMR0JFAAUbHHP0NFG89wD+FFAEqfcb8Ka332+tFFADD1ooooAZRRRQB//Z
+
+X-MS-OL-DESIGN;CHARSET=utf-8:<card xmlns="http://schemas.microsoft.com/office/outlook/12/electronicbusinesscards" ver="1.0" layout="left" bgcolor="ffffff"><img xmlns="" align="fit" area="16" use="cardpicture"/><fld xmlns="" prop="name" align="left" dir="ltr" style="b" color="000000" size="10"/><fld xmlns="" prop="org" align="left" dir="ltr" color="000000" size="8"/><fld xmlns="" prop="title" align="left" dir="ltr" color="000000" size="8"/><fld xmlns="" prop="telwork" align="left" dir="ltr" color="000000" size="8"><label align="right" color="626262">Work</label></fld><fld xmlns="" prop="email" align="left" dir="ltr" color="000000" size="8"/><fld xmlns="" prop="addrhome" align="left" dir="ltr" color="000000" size="8"/><fld xmlns="" prop="addrwork" align="left" dir="ltr" color="000000" size="8"/><fld xmlns="" prop="webwork" align="left" dir="ltr" color="000000" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/><fld xmlns="" prop="blank" size="8"/></card>
+REV:20120208T163028Z
+END:VCARD

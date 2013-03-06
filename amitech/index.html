@@ -1,0 +1,479 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Amitech</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="css/splash/supersized.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="splash.css" type="text/css" media="screen" />
+        
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="js/supersized.3.2.4.min.js"></script>
+		<script type="text/javascript" src="js/supersized.shutter.min.js"></script>
+		<script src="js/jquery.bxSlider.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+				jQuery(function($){
+					$.supersized({
+						// Functionality
+						slideshow               :   1,			// Slideshow on/off
+						autoplay				:	1,			// Slideshow starts playing automatically
+						start_slide             :   1,			// Start slide (0 is random)
+						stop_loop				:	0,			// Pauses slideshow on last slide
+						random					: 	0,			// Randomize slide order (Ignores start slide)
+						slide_interval          :   3000,		// Length between transitions
+						transition              :   3, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+						transition_speed		:	1000,		// Speed of transition
+						new_window				:	0,			// Image links open in new window/tab
+						pause_hover             :   0,			// Pause slideshow on hover
+						keyboard_nav            :   0,			// Keyboard navigation on/off
+						performance				:	3,			// 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
+						image_protect			:	1,			// Disables image dragging and right click with Javascript
+
+						// Size & Position						   
+						min_width		        :   0,			// Min width allowed (in pixels)
+						min_height		        :   482,		// Min height allowed (in pixels)
+						vertical_center         :   0,			// Vertically center background
+						horizontal_center       :   0,			// Horizontally center background
+						fit_always				:	0,			// Image will never exceed browser width or height (Ignores min. dimensions)
+						fit_portrait         	:   0,			// Portrait images will not exceed browser height
+						fit_landscape			:   0,			// Landscape images will not exceed browser width
+
+						// Components							
+						slide_links				:	false,	// Individual links for each slide (Options: false, 'number', 'name', 'blank')
+						thumb_links				:	0,			// Individual thumb links for each slide
+						thumbnail_navigation    :   0,			// Thumbnail navigation
+						slides 					:  	[			// Slideshow Images
+															{image : 'img/bg1.jpg', title : '', thumb : '', url : ''},
+															{image : 'img/bg2.jpg', title : '', thumb : '', url : ''},  
+															{image : 'img/bg3.jpg', title : '', thumb : '', url : ''},
+															{image : 'img/bg4.jpg', title : '', thumb : '', url : ''}
+													],
+
+						// Theme Options			   
+						progress_bar			:	0,			// Timer for each slide							
+						mouse_scrub				:	0
+					});
+			    });
+		</script>
+        	<script type="text/javascript">
+		  $(document).ready(function(){
+			var subnav = $('#subnav').bxSlider({
+			    captions: false,
+			    auto: false,
+			    controls: false
+			  });
+			
+			var updates = $('#updates').bxSlider({
+			    mode: 'horizontal',
+			    captions: false,
+			    auto: false,
+			    controls: false,
+				speed: 1000,
+				pause: 8000
+			  });
+			var headline = $('#headline').bxSlider({
+			    mode: 'horizontal',
+			    captions: false,
+			    auto: true,
+			    controls: false,
+				pager: true,
+				speed: 1000,
+				pause: 8000,
+				onBeforeSlide: function(currentSlide, totalSlides){
+					  updates.goToNextSlide();
+					  api.nextSlide();
+				    }
+			  });
+			
+
+		  });
+		</script>
+        <link rel="stylesheet" href="css/megamenu.css" type="text/css" media="screen" /><!-- Mega Menu Stylesheet -->
+
+
+<script type="text/javascript" src="js/megamenu_plugins.js"></script><!-- Mega Menu Plugins -->
+<script type="text/javascript" src="js/megamenu.js"></script><!-- Mega Menu Script -->
+<script>
+$(document).ready(function($){
+	$('.megamenu').megaMenuCompleteSet({
+		menu_speed_show : 300, // Time (in milliseconds) to show a drop down
+		menu_speed_hide : 200, // Time (in milliseconds) to hide a drop down
+		menu_speed_delay : 200, // Time (in milliseconds) before showing a drop down
+		menu_effect : 'hover_fade', // Drop down effect, choose between 'hover_fade', 'hover_slide', etc.
+		menu_click_outside : 1, // Clicks outside the drop down close it (1 = true, 0 = false)
+		menu_show_onload : 0 // Drop down to show on page load (type the number of the drop down, 0 for none)
+	});
+});
+</script>
+
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="css/megamenu_ie6.css" />
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+<![endif]-->
+	
+	</head>
+<body>
+	<div id="header_container">
+		<div id="header">
+			<div class="logo"><a href="#"><img src="img/logo.png"></a></div>
+            <div class="blog"><a href="#">BLOG</a></div>
+            
+            <div class="blog"><a href="#">BLOG</a></div>
+			<div id="partners"><a href="#"><img src="img/twitter.png"></a><a href="#"><img src="img/linkedin.png"></a><a href="#"><img src="img/facebook.png"></a></div>
+<div class="megamenu_container menu_blue"><!-- Begin Menu Container -->
+
+    
+    <ul class="megamenu"><!-- Begin Mega Menu -->
+       
+    
+        <li><a href="#" class="drop">Firm</a><!-- Begin Item -->
+        
+        
+            <div class="drop4columns dropcontent"><!-- Begin Item Container -->
+            
+        
+                <div class="col_3">
+                    <p class="ltblue"><a href="about.html">About</a></p>
+                    <ul class="cols">
+                    <li><a href="about.html">Mission &amp; Values</a></li>
+                    <li><a href="about.html">Letter from the President</a></li>
+</ul>
+                
+                    <p class="ltblue"><a href="about.html">Leadership Team</a></p>
+                
+                    <p class="ltblue"><a href="about.html">Affiliates</a></p>
+ <ul class="cols">
+                    <li><a href="about.html">PotentiaMED</a></li>
+                    <li><a href="about.html">FAN</a></li>
+                    <li><a href="about.html">TGMG</a></li>
+</ul>
+     <p class="ltblue"><a href="about.html">Partners</a></p>    
+                
+                </div>        
+            
+            </div><!-- End Item Container -->
+            
+        
+        </li><!-- End Item -->
+        
+        
+                
+        <li><a href="#" class="drop">Industries</a><!-- Begin Item -->
+        
+        
+            <div class="drop6columns dropcontent"><!-- Begin Item Container -->
+            
+        
+                <div class="col_4">
+                    <p class="ltblue"><a href="about.html">Payers</a></p>
+                    
+                     <ul class="cols">
+                    <li><a href="about.html">Health Plans</a></li>
+                    <li><a href="about.html">Dental Plans</a></li>
+                     <li><a href="about.html">Medicaid</a></li>
+                      <li><a href="about.html">Medicare Advantage</a></li>
+                       <li><a href="about.html">Third Party Administrators</a></li>
+                        <li><a href="about.html">Health Insurance Exchanges</a></li>
+</ul>
+
+                
+                    <p class="ltblue"><a href="about.html">Providers</a></p>
+
+                     <ul class="cols">
+                    <li><a href="about.html">Hospitals</a></li>
+                    <li><a href="about.html">Physicians Groups</a></li>
+                     <li><a href="about.html">Accountable Care Organizations</a></li>
+                     
+</ul>
+</div>
+<div class="col_4">
+                <p class="ltblue"><a href="about.html">Life Sciences</a></p>
+                                     <ul class="cols">
+                    <li><a href="about.html">Medicare Part D</a></li>
+                    <li><a href="about.html">Pharmeceuticals</a></li>
+                     <li><a href="about.html">Pharamacy Benefit Management</a></li>
+                      <li><a href="about.html">Medical Devices</a></li>
+                     
+</ul>
+
+                    <p class="ltblue"><a href="about.html">Financial Services</a></p>
+                
+                    <p class="ltblue"><a href="about.html">Other Industries</a></p>
+               
+                </div>    
+            
+            </div><!-- End Item Container -->
+            
+        
+        </li><!-- End Item -->
+        
+                <li><a href="#" class="drop">Solutions</a><!-- Begin Item -->
+        
+        
+            <div class="drop6columns dropcontent"><!-- Begin Item Container -->
+            
+        
+                <div class="col_4">
+                    <p class="ltblue"><a href="about.html">Payers</a></p>
+                    
+                     <ul class="cols">
+                    <li><a href="about.html">Member Retention &amp; Growth</a></li>
+                    <li><a href="about.html">Claims Management</a></li>
+                     <li><a href="about.html">Disease Management</a></li>
+                      <li><a href="about.html">Utilization Management</a></li>
+                       <li><a href="about.html">Risk Management</a></li>
+                        <li><a href="about.html">Provider Management</a></li>
+                           <li><a href="about.html">Quality Measurement</a></li>
+                              <li><a href="about.html">Network Management</a></li>
+                                 <li><a href="about.html">Compliance &amp; Regulations</a></li>
+                                   
+</ul> </div>
+
+                <div class="col_4">
+                    <p class="ltblue"><a href="about.html">Providers</a></p>
+
+                     <ul class="cols">
+                    <li><a href="about.html">Meaningful use</a></li>
+                    <li><a href="about.html">Health Information Exchanges (HIE)</a></li>
+                     <li><a href="about.html">ICD 10</a></li>
+                     
+</ul>
+                <p class="ltblue"><a href="about.html">Life Sciences</a></p>
+                                     <ul class="cols">
+                    <li><a href="about.html">Pharma Sales &amp; Marhb</a></li>
+    
+                     
+</ul>
+
+             
+                </div>    
+            
+            </div><!-- End Item Container -->
+            
+        
+        </li><!-- End Item -->
+        
+                <li><a href="#" class="drop">Services</a><!-- Begin Item -->
+        
+        
+            <div class="drop6columns dropcontent"><!-- Begin Item Container -->
+            
+        
+                <div class="col_4">
+                    <p class="ltblue"><a href="about.html">Business Analytics</a></p>
+                    <ul class="cols">
+                    <li><a href="about.html">Roadmap Strategy</a></li>
+                    <li><a href="about.html">Financial Performance Management</a></li>
+                    <li><a href="about.html">Business Intelligence</a></li>
+                      <li><a href="about.html">Mobile BI</a></li>
+                    <li><a href="about.html">Analytics &amp; Predictive Modeling</a></li>
+                  
+</ul>
+                
+                    <p class="ltblue"><a href="about.html">Information Management</a></p>
+ <ul class="cols">
+                    <li><a href="about.html">Data Governance</a></li>
+                    <li><a href="about.html">Data Quality</a></li>
+                    <li><a href="about.html">Data Integration</a></li>
+                    <li><a href="about.html">Master Data Management</a></li>
+                    <li><a href="about.html">Big Data</a></li>
+                    <li><a href="about.html">Portals &amp; Content Management</a></li>
+</ul>
+                
+      </div>
+      <div class="col_4">         
+                
+                        
+
+                    <p class="ltblue"><a href="about.html">Enterprise Solutions</a></p>
+ <ul class="cols">
+                    <li><a href="about.html">Portals &amp; Content Management</a></li>
+                    <li><a href="about.html">Custom Application Development</a></li>
+                    <li><a href="about.html">Project Management</a></li>
+                    <li><a href="about.html">ETC</a></li>
+         
+</ul>
+<p class="ltblue"><a href="about.html">Talent Management</a></p>
+         
+                
+                </div>  
+            
+            </div><!-- End Item Container -->
+            
+        
+        </li><!-- End Item -->
+        
+        
+
+        
+        
+        
+        
+        <li><a href="#" class="drop">Clients</a><!-- Begin Item -->
+        
+        
+            <div class="drop4columns dropcontent"><!-- Begin Item Container -->
+            
+        
+                <div class="col_3">
+                    <p class="ltblue"><a href="about.html">Representative Clients</a></p>
+                    <p class="ltblue"><a href="about.html">Prospective Clients</a></p>                
+                    <p class="ltblue"><a href="about.html">Testimonials</a></p>
+                
+                    <p class="ltblue"><a href="about.html">Other Industries</a></p>
+               
+                </div>    
+            
+            </div><!-- End Item Container -->
+            
+        
+        </li><!-- End Item -->
+         <li><a href="#" class="drop">Partners</a><!-- Begin Item -->
+        </li><!-- End Item -->       
+        
+
+    
+         <li><a href="#" class="drop">Resources</a><!-- Begin Item -->
+        
+        
+            <div class="drop4columns dropcontent"><!-- Begin Item Container -->
+            
+        
+                <div class="col_3">
+                    <p class="ltblue"><a href="about.html">Downloads</a></p>
+                    <p class="ltblue"><a href="about.html">News &amp; Events</a></p>
+                    <p class="ltblue"><a href="about.html">Videos</a></p>
+                    <p class="ltblue"><a href="about.html">IBM</a></p>
+                    <p class="ltblue"><a href="about.html">Microsoft</a></p>
+                    <p class="ltblue"><a href="about.html">Oracle</a></p>
+        
+                </div>
+            
+            </div><!-- End Item Container -->
+            
+        
+        </li><!-- End Item -->
+   
+    
+    
+    </ul><!-- End Mega Menu -->
+
+
+</div><!-- End Menu Container -->				
+		</div>
+	
+	<div id="content">
+		<!--<div id="headline_container">
+			<div id="headline">
+			  	<div id="headline_content"><span class="headline_text"><a href="#">Actionable intelligence</a></span>We transform data into actionable insights for the rapidly changing Healthcare reform environment <a class="more" href="#">MORE></a></div>
+			  	<div id="headline_content"><span class="headline_text"><a href="#">Optimized Organizational Performance</a></span>We help enterprises realize the greatest value from their informational assets <a class="more" href="#">MORE></a></div>
+			  	<div id="headline_content"><span class="headline_text"><a href="#">Custom Business applications</a></span>We develop new software applications to optimize performance and realize increase returns <a class="more" href="#">MORE></a></div>
+			  	<div id="headline_content"><span class="headline_text"><a href="#">Predictive Analytics Solutions</a></span>We create models that reveal hidden relationships and patterns to help our clients achieve a competitive edge <a class="more" href="#">MORE></a></div>
+			</div>
+		</div>-->
+	<!--	<div id="box_container">
+			<div id="box"><h3><img src="img/box_img1.png"><a href="#"><span class="box_headline">Understand</span><br />the current state of<br />your organization</a></h3><span class="box_arrow"><a href="#">&gt;</a></span></div>
+			<div id="box"><h3><img src="img/box_img2.png"><a href="#"><span class="box_headline">Analyze</span><br />performance<br />and identify opportunities</a></h3><span class="box_arrow"><a href="#">&gt;</a></span></div>
+			<div id="box"><h3><img src="img/box_img3.png" width="28" height="61"><a href="#"><span class="box_headline">Anticipate</span><br />and lead<br />change</a></h3><span class="box_arrow"><a href="#">&gt;</a></span></div>
+			<div id="box"><h3><img src="img/box_img4.png"><a href="#"><span class="box_headline">Innovate</span><br />to stay ahead of<br />the competition</a></h3><span class="box_arrow"><a href="#">&gt;</a></span></div>
+		</div>-->
+        <div id="updates_container">
+		<div id="updates_box">
+			<div id="updates">
+				<div class="newsTxt"><span class="update">Update:</span> Amitech Solutions develops streamlined decision-making process for Arkansas Blue Cross Blue Shield</div>
+			  	<div class="newsTxt"><span class="update">Update:</span> Amitech Solutions division PotentiaMed develops custom diabetic monitoring application called ___ </div>
+			  	<div class="newsTxt"><span class="update">Update:</span> Amitech Solutions President to speak at IM Symposium in Panel Session on MDM and Governance</div>
+			  	<div class="newsTxt"><span class="update">Update:</span> Amitech Solutions optimizes…Delta Dental</div>
+			</div>
+		</div>
+	</div>
+
+	</div>
+           
+	<div id="bottom_nav_container">
+    <div class="large_box">
+    <div class="first_box">
+    <h1>Our Philosophy</h1>
+    </div>
+        <div class="boxes">
+        <h1>Featured Projects</h1>
+        </div>
+         <div class="boxes">
+         <h1>Upcoming Events</h1>
+         <h2>TDWI St. Louis Chapter</h2>
+         <p>September 14<br />
+           <a href="#">Amitech Solutions a Sponsor of
+TDWI St. Louis Chapter Meeting
+on...topic TBD</a></p>
+         <h2>TDWI St. Louis Chapter</h2>
+         <p>September 14<br />
+           <a href="#">Amitech Solutions a Sponsor of
+TDWI St. Louis Chapter Meeting
+on...topic TBD</a></p>
+         </div>
+          <div class="boxes">
+          <h1>Recent News</h1>
+          <p>Global Market Leading 
+Manufacturer in Oil and Gas 
+Industry Partners with Amitech 
+Solutions to Improve Financial 
+Performance</p>
+<p>&quot;Big Data and Analytics: What You Need to Know to Get Started&quot; Webinar - downloads available</p>
+          </div>
+    </div>
+		<div id="bottom_nav"> 	
+			<ul>
+				<li><a href="#">Business Analytics</a>
+					<ul>
+                    <li><a href="about.html">Roadmap Strategy</a></li>
+                    <li><a href="about.html">Financial Performance Management</a></li>
+                    <li><a href="about.html">Business Intelligence</a></li>
+                      <li><a href="about.html">Mobile BI</a></li>
+                    <li><a href="about.html">Analytics &amp; Predictive Modeling</a></li>
+					</ul>
+				</li>
+				<li style="margin-left: 10px;"><a href="#">Information Management</a>
+					<ul>
+						<li><a href="#">Data Governance</a></li>
+						<li><a href="#">Data Quality</a></li>
+						<li><a href="#">Data Integration</a></li>
+				
+						<li><a href="#">Master Data Management</a></li>
+                        		<li><a href="#">Big Data</a></li>
+						<li><a href="#">Portals and Content Management</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Enterprise Solutions</a>
+					<ul>
+                    <li><a href="about.html">Portals &amp; Content Management</a></li>
+                    <li><a href="about.html">Custom Application Development</a></li>
+                    <li><a href="about.html">Project Management</a></li>
+                    <li><a href="about.html">ETC</a></li>
+					</ul>
+				</li>
+				<li style="margin-left: 5px;"><a href="#">Talent Engagement</a>
+					<ul>
+				    <li><a href="about.html">Consulting</a></li>
+                    <li><a href="about.html">Onshore</a></li>
+                    <li><a href="about.html">Offshore</a></li>
+          
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer">
+		<div id="footer_box">
+			<div class="copy">1999 - 2011 Amitech Solutions Inc. - St. Louis Leader in BI</div>
+			<div class="footer_nav">
+				<ul>
+					<li><a href="#">Privacy &amp; Legal Disclaimer |</a></li>
+					<li><a href="#">Contact Us |</a></li>
+					<li><a href="#">Site Map</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>	</div>
+</body>
+</html>

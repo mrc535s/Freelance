@@ -1,0 +1,28 @@
+/* This style sheet is for the Project Gallery pop up pages and the 50th Anniversary page */
+#galleryCont {width: 450px; height: 450px; text-align: center;}
+/*#galleryCont img {width: auto;}*/
+#galleryCont p, #galleryContLrg p, #galleryCont2 p, #galleryContSm p {font-size: 12px; font-weight: bold; color: #ffffff;}
+#galleryContLrg {width: 450px; height: 560px; text-align: center;}
+/*#galleryCont img {width: auto;}*/
+.closeBttn {float: right; margin-right: 0px; position: relative; right: 0px; display: inline; margin-top: 5px; margin-bottom: 10px; clear: both;}
+.closeBttn2 {float: right; margin-right: 0px; position: relative; right: 0px; display: inline; margin-top: 5px; margin-bottom: 10px; clear: both; width: 230px;}
+
+#galleryCont img, #galleryContLrg img {margin-top: 10px; }
+
+#photoCont {margin: 0px 0px 0px 0px; }
+#photoCont ul {list-style: none; display: inline; }
+#photoCont li {
+	float: left;
+	margin-right: 12px;
+	margin-bottom: 10px;
+	font: 10px verdana, sans-serif;
+	color: #525252; text-align: left; list-style-type: none; width:300px; padding-right: 0px;
+}
+#photoCont img {
+	padding-bottom: 4px; padding-right: 0px; padding-left: 0px; margin-left: -1px; }
+	
+#prevNext {float: right; display: block; position: relative; margin-right: 80px; padding-bottom: 5px; display: inline; }
+* html #prevNext {margin-top: 25px; }
+
+#galleryCont2 {width: 570px; height: 450px; text-align: center;}
+#galleryContSm {width: 570px; height: 450px; text-align: center;}

@@ -1,0 +1,44 @@
+/* COLOR SHADES */
+
+/*
+
+BACKGROUND: #67250b
+LIGHTER: #8e320d 
+LIGHTEST: #ce4611
+
+*/
+
+/* PRIMARY ELEMENTS */
+
+body {
+	background: #67250b url(../../images/skin/footer-orange.png) 0 bottom repeat-x;
+}
+
+#wrapper {
+	background: #67250b url(../../images/skin/dots-orange.jpg) center 0 no-repeat;
+}
+
+/* CLASSES */
+
+.highlight {
+	color: #8e320d;
+}
+
+/* TYPOGRAPHY */
+
+a,
+h2 a:hover,
+.nav-entries a:hover,
+#sidebar li a:hover {
+	color: #ce4611;
+}
+
+a:hover {
+	color: #67250b;
+}
+
+/* COPYRIGHT */
+
+#copyright .menu a:hover {
+	color: #8e320d;
+}
